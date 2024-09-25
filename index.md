@@ -34,8 +34,8 @@ Here is **Liao Honglin (Honglin Liao,廖泓霖)**.
 ## Research Interests
 
 - Applied Machine Learning
-- Industrial Internet of Things
-- Intelligent Sensor
+- Risk Management
+- Engineering Management
 
 <ul class="timeline">
 
