@@ -13,7 +13,7 @@ title: Publications
 <br> *PeerJ Computer Science, 2024*.(JCR **Q1**, IF **3.5**).
 
 - mmPowerHAR: A Framework Using mmRadar for Human Activity Recognition in Power Station 
-<br> **hONGLIN Liao**, Jiacheng Huang, Hanlin Cai, Cunyi Yin, Hao Jiang
+<br> **Honglin Liao**, Jiacheng Huang, Hanlin Cai, Cunyi Yin, Hao Jiang
 <br> Submitted to *IEEE Transactions on Network Science and Engineering, 2024* (Under Review).
 
 ## Conference Paper
