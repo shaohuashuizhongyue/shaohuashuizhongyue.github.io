@@ -13,7 +13,7 @@ layout: page
 
 # About Me
 
-<img src="/images/songjiang.jpg" class="floatpic" width="360" height="480">
+<img src="/images/Songjiang.jpg" class="floatpic" width="360" height="480">
 
 Here is **Jiacheng Huang (Kano,黄家成)**.
 
