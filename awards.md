@@ -4,7 +4,7 @@ permalink: /awards/index.html
 title: Awards
 ---
 
-> Lastest Update: 6th Sep 2024 &nbsp; [中文版本 (Chinese Version)](https://jiachenghuang.com/file/awards-zh/)
+
 
 ## Scholarships
 
