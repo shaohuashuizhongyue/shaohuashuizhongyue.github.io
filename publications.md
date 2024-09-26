@@ -10,7 +10,7 @@ title: Publications
 
 - [LEET: stock market forecast with long-term emotional change enhanced temporal model](https://doi.org/10.7717/peerj-cs.1969)
 <br> **Honglin Liao**, Jiacheng Huang , Yong Tang
-<br> *PeerJ Computer Science, 2024*.(JCR **Q1**, IF **3.5**).
+<br> *PeerJ Computer Science, 2024*.( **JCR Q1**, **IF 3.5**).
 
 - mmPowerHAR: A Framework Using mmRadar for Human Activity Recognition in Power Station 
 <br> **Honglin Liao**, Jiacheng Huang, Hanlin Cai, Cunyi Yin, Hao Jiang
@@ -22,6 +22,11 @@ title: Publications
 <br> Hanlin Cai, Yucheng Fang, Jiacheng Huang, **Honglin Liao**, Meng Yuan, Zhezhuang Xu 
 <br> *ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD 2024, CCF-A)* 
 <br> Barcelona, Spainbay. Aug, 2024.
+
+- [Energy Demand Forecasting Model Based on Romember's Self-Attention Mechanism and Deep Learning](https://ieeexplore.ieee.org/document/1594520)
+<br> **Honglin Liao**, Zheng Wu, Hanhao Ye, Pengxiang Hu, Wei Du, Yong Tang
+<br> *International Conference on Electronic Technology, Communication and Information (ICETCI 2024,EI Compendex, SCOPUS)*
+<br> Changchun, China. May, 2024.
 
 - [Research on automatic pricing and replenishment decision of vegetable commodities based on penalty function LSTM model](https://ieeexplore.ieee.org/document/10442643)
 <br> **Honglin Liao**, Jiacheng Huang, Shujuan Chen
