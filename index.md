@@ -14,7 +14,7 @@ layout: page
 
 # About Me
 
-<img src="/images/sagrada.png" class="floatpic" width="360" height="480">
+<img src="/images/Sagrada_Familia.png" class="floatpic" width="360" height="480">
 
 Here is **Liao Honglin (Honglin Liao,廖泓霖)**.
 
@@ -53,7 +53,7 @@ My current research primarily focuses on exploring<strong> the applications of a
     <li>Sep 2024: (award)Received the Fuzhou University Comprehensive Third-Class Scholarship.</li>
     <li>Aug 2024: (paper)Our paper has been accepted by <strong><font color='red'>KDD 2024</font></strong> (CCF-A). See you in Spain!</li>
     <li>Aug 2024: (certificate)Successfully passed the Financial Risk Manager (<strong>FRM</strong>) certification Level I issued by the Global Association of Risk Professionals (GARP)!</li>
-    <li>Apr 2024: (paper)Our paper LEET accepted by <strong><font color='red'>PeerJ Computer Science 2024</font></strong> (IF=3.5).</li> 
+    <li>Apr 2024: (paper)Our paper LEET accepted by <strong><font color='red'>PeerJ Computer Science 2024</font></strong> (<strong>IF=3.5</strong>).</li> 
     <li>Feb 2024: (award)Received the "H Award" in the MCM competition.</li>
     <li>Nov 2023: (paper)Our paper on Automatic Pricing accepted by <strong>IEECT 2023</strong>.</li>
     <li>Nov 2023: (activity)Became a research assistant in the Financial Technology Laboratory under the guidance of Prof. <strong>Yong Tang</strong>.</li>
