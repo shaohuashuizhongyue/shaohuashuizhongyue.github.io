@@ -57,7 +57,7 @@ Deeply mining the characteristics of public and market-related data and further 
 <br>• **Responsibilities**:  
 Researching the impact of market sentiment on the stock market and quantitative analysis of market sentiment using deep learning and other AI models; 
 <br>• **Achievement**:  
-Published [LEET: stock market forecast with long-term emotional change enhanced temporal model](https://doi.org/10.7717/peerj-cs.1969)in*PeerJ Computer Science, 2024*.( **JCR Q1**, **IF 3.5**) as **First author and corresponding author**.
+Published [LEET: stock market forecast with long-term emotional change enhanced temporal model](https://doi.org/10.7717/peerj-cs.1969) in *PeerJ Computer Science, 2024*.( **JCR Q1**, **IF 3.5**) as **First author and corresponding author**.
 
 
 - **Stock Price Prediction Research Based on RoBERTa-Informer**(Jun 2023-Jun 2024) 
