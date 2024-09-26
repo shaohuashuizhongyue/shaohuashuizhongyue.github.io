@@ -44,7 +44,7 @@ My current research primarily focuses on exploring<strong> the applications of a
 <br>Through this research, I aspire to bridge the gap between theoretical concepts and practical applications, leveraging AI's computational power to tackle intricate economic and managerial problems. The goal is to create adaptive and intelligent systems that can navigate the complexities of global markets, optimize resource allocation, and improve decision-making processes across various sectors. This work not only pushes the boundaries of AI applications but also seeks to establish a new paradigm in interdisciplinary research, fostering collaboration between traditionally distinct academic domains for the betterment of society.
 
 </ul>
----
+
 
 ## Research Projects
 
