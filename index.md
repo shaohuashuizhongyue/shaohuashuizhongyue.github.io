@@ -14,7 +14,7 @@ layout: page
 
 # About Me
 
-<img src="/images/Songjiang.jpg" class="floatpic" width="360" height="480">
+<img src="/images/sagrada.png" class="floatpic" width="360" height="480">
 
 Here is **Liao Honglin (Honglin Liao,廖泓霖)**.
 
