@@ -1,4 +1,4 @@
----
+![image](https://github.com/user-attachments/assets/6f66a8e9-be40-462b-b9d3-24458ee80114)![image](https://github.com/user-attachments/assets/9d6a790b-9b70-4391-bde0-35b626d196b5)---
 layout: page
 ---
 
@@ -124,14 +124,12 @@ Exploring the application of deep learning models based on self-attention mechan
   
 ---
 
- I successfully obtained the Financial Risk Manager (FRM) certification issued by the Global Association of Risk Professionals (GARP) and passed the Level I exam with distinction (global pass rate of approximately 40%).
-
 ## News and Updates
 
 <ul class="timeline">
     <li>Sep 2024: (award)Received the Fuzhou University Comprehensive Third-Class Scholarship.</li>
     <li>Aug 2024: (paper)Our paper has been accepted by <strong><font color='red'>KDD 2024</font></strong> (CCF-A). See you in Spain!</li>
-    <li>Aug 2024: (certificate)Successfully passed the Financial Risk Manager (**FRM**) certification Level I issued by the Global Association of Risk Professionals (GARP)!</li>
+    <li>Aug 2024: (certificate)Successfully passed the Financial Risk Manager (<strong>FRM</strong>strong>) certification Level I issued by the Global Association of Risk Professionals (GARP)!</li>
     <li>Apr 2024: (paper)Our paper LEET accepted by <strong><font color='red'>PeerJ Computer Science 2024</font></strong> (IF=3.5).</li> 
     <li>Feb 2024: (award)Received the "H Award" in the MCM competition.</li>
     <li>Nov 2023: (paper)Our paper on Automatic Pricing accepted by <strong>IEECT 2023</strong>.</li>
