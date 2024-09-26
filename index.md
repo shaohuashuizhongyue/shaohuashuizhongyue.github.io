@@ -88,6 +88,8 @@ My current research is focused on addressing the real-world challenges encounter
 - Aug 2023: The 16th National College Students Electronic Design Competition Fujian Division **Third Prize**
 - Jul 2023: The 18th National College Students Intelligent Car Competition South China Region **Outstanding Award**
 - Feb 2023: The 25th International Mathematical Contest for University Students **S Award**
+  
+
 ---
 
 
