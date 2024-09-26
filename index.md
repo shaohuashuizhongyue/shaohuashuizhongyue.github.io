@@ -45,6 +45,7 @@ My current research primarily focuses on exploring<strong> the applications of a
 
 </ul>
 
+---
 
 ## Research Projects
 
