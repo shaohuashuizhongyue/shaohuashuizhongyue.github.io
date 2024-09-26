@@ -26,6 +26,7 @@ title: Awards
 - Aug 2024: KDD2024 Student volunteer
 <br>Check whether the identity of participants meets the standard, actively deal with equipment problems in the venue, and be responsible for maintaining the order of the venue with the person in charge of on-site order management.
 <br>Individual volunteer service 8h
+
 ---
 
 <br>Under Construction
