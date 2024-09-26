@@ -1,6 +1,7 @@
-![image](https://github.com/user-attachments/assets/6f66a8e9-be40-462b-b9d3-24458ee80114)![image](https://github.com/user-attachments/assets/9d6a790b-9b70-4391-bde0-35b626d196b5)---
+---
 layout: page
 ---
+
 
 <style>
     .timeline {
