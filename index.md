@@ -42,6 +42,34 @@ Here is **Liao Honglin (Honglin Liao,廖泓霖)**.
 My current research is focused on addressing the real-world challenges encountered by <strong>artificial intelligence</strong>. I am particularly interested in the application of <strong>machine learning</strong> in Industrial <strong>IoT</strong> and smart <strong>sensors</strong>. In the future, cutting-edge technologies in artificial intelligence and IoT will have a constructive impact on people's lives. I am eager to contribute my skills to this significant endeavor and enhance societal well-being.
 
 </ul>
+---
+
+## Research Projects
+
+- **Research on Marketization Allocation of Public Data Assets**(Jun 2023-present)
+<br>National Social Science Foundation Project
+<br>Supervisor: Prof. Yong Tang, Fuzhou University 
+<br>• **Outline**:
+Deeply mining the characteristics of public and market-related data and further evaluate its inner value; 
+<br>• **Responsibilities**:  
+Researching the impact of market sentiment on the stock market and quantitative analysis of market sentiment using deep learning and other AI models; 
+<br>• **Achievement**:  
+Published [LEET: stock market forecast with long-term emotional change enhanced temporal model](https://doi.org/10.7717/peerj-cs.1969)in*PeerJ Computer Science, 2024*.( **JCR Q1**, **IF 3.5**) as **First author and corresponding author**.
+
+
+- **Stock Price Prediction Research Based on RoBERTa-Informer**(Jun 2023-Jun 2024) 
+<br>Supervisor: Prof. Yong Tang, Fuzhou University
+<br>• **Responsibilities**:  
+Project proposal and opening report writing, algorithm construction and experimentation, completion of project conclusion report and defense PPT production; 
+<br>• **Achievement**:  
+Received provincial scientific innovation fund of **¥10,000**for research, excellent conclusion(Only one in Economic and Managememt college).
+
+- **Quantitative Finance and Fintech under Artificial Intelligence (Application of Machine Learning in Business Data Analysis and Stock Market Prediction)**(Aug 2023-Sep 2023) 
+<br>Provincial Undergraduate Innovation and Entrepreneurship Training Programme
+<br>Supervisor: Prof. Patrick Rebeschini,  Oxford University
+<br>• **Responsibilities**:  
+Exploring the application of deep learning models based on self-attention mechanism in quantitative trading
+
 
 ---
 # Publications
@@ -80,11 +108,12 @@ My current research is focused on addressing the real-world challenges encounter
 
 ## Competitions
 
-- Feb 2024: The 26th International Mathematical Contest for University Students **H Award**
+- Feb 2023:Kaggle Google Data Science Competition Home Credit - Credit Risk Model Stability <br> **Silver Medal** (Global Ranking: **90/3856**) 
+
+- Feb 2024: The 26th International Mathematical Contest for University Students **H Award**(bonus **¥719**)
 
 - Feb 2023: The 25th International Mathematical Contest for University Students **S Award**
-  
-
+- 
 ---
 
 
