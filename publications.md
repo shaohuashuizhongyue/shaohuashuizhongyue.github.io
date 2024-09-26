@@ -33,5 +33,14 @@ title: Publications
 <br> *International Conference on Information Engineering, Electronics and Communication Technology (IEECT 2023,EI Compendex, SCOPUS)*
 <br> Los Angeles, USA. September, 2023.
 
+- [Research on Ovarian Image Classfication Model Based on EfficientNet-B0 and Generalized Mean Pooling]
+<br> **Honglin Liao**, Hanhao Ye, Jinyangzhen Dan, Junxi Liao, Zhiyuan Ni, Zhuoyi Yu, Hankai Qiu
+<br> *International Conference on Artificial Intelligence, Computers and Big Data (AICBD 2024,EI Compendex, SCOPUS)*
+<br> Qingdao, China. October, 2024.
+
+- [A study on the impact of GGDP on climate mitigation based on grey prediction]
+<br> **Honglin Liao**, Zhuoyi Yu, Yuxuan Shi
+<br> *2023 2nd International Conference on Applied Mathematics, Modeling Simulation and Automatic Control (AMMSAC 2023,CPCI, SCOPUS)*
+
 ---
 

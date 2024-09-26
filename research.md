@@ -4,7 +4,7 @@ permalink: /research/index.html
 title: research
 ---
 
-> Lastest Update: 9th Sep 2024 &nbsp; [中文版本 (Chinese Version)](https://jiachenghuang.com/file/research-zh/)
+> Lastest Update: 9th Sep 2024 &nbsp; 
 
 ## Internship Experience
 
