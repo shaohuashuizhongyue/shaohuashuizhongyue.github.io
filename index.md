@@ -90,6 +90,11 @@ Exploring the application of deep learning models based on self-attention mechan
 <br> *ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD 2024, CCF-A)* 
 <br> Barcelona, Spainbay. Aug, 2024.
 
+- [Energy Demand Forecasting Model Based on Romember's Self-Attention Mechanism and Deep Learning](https://ieeexplore.ieee.org/document/1594520)
+<br> **Honglin Liao**, Zheng Wu, Hanhao Ye, Pengxiang Hu, Wei Du, Yong Tang
+<br> *International Conference on Electronic Technology, Communication and Information (ICETCI 2024,EI Compendex, SCOPUS)*
+<br> Changchun, China. May, 2024.
+
 - [Research on automatic pricing and replenishment decision of vegetable commodities based on penalty function LSTM model](https://ieeexplore.ieee.org/document/10442643)
 <br> **Honglin Liao**, Jiacheng Huang, Shujuan Chen
 <br> *International Conference on Information Engineering, Electronics and Communication Technology (IEECT 2023,EI Compendex, SCOPUS)*
