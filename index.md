@@ -52,7 +52,7 @@ My current research primarily focuses on exploring<strong> the applications of a
 <ul class="timeline">
     <li>Sep 2024: (award)Received the Fuzhou University Comprehensive Third-Class Scholarship.</li>
     <li>Aug 2024: (paper)Our paper has been accepted by <strong><font color='red'>KDD 2024</font></strong> (<strong>CCF-A</strong>). See you in Spain!</li>
-    <li>Aug 2024: (certificate)Successfully passed the Financial Risk Manager (<strong>FRM</strong>) certification Level I issued by the Global Association of Risk Professionals (GARP)!</li>
+    <li>Aug 2024: (certificate)Successfully passed the Financial Risk Manager (<strong>FRM</strong>) certification Level I issued by the Global Association of Risk Professionals (<strong>GARP</strong>)!</li>
     <li>Apr 2024: (paper)Our paper LEET accepted by <strong><font color='red'>PeerJ Computer Science 2024</font></strong> (<strong>JCR QI, IF=3.5</strong>).</li> 
     <li>Feb 2024: (award)Received the "H Award" in the MCM competition.</li>
     <li>Nov 2023: (paper)Our paper on Automatic Pricing accepted by <strong>IEECT 2023</strong>.</li>
