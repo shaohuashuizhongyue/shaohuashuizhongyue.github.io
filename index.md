@@ -24,9 +24,9 @@ Here is **Liao Honglin (Honglin Liao,廖泓霖)**.
 </style>
 
 <div class="justify-text">
-    Welcome to my academic homepage! I am a grade three undergrad majoring in EE at Fuzhou University and Maynooth University (Combined Degrees). At present, I am working as a research assistant at the Institute of Electrical Power Systems and Equipment, under the supervision of Prof.Jiang Hao and Dr.Yin Cunyi.
+    Welcome to my academic homepage! I am a third-year undergraduate student pursuing a dual degree in Robotics and Intelligent Devices at Maynooth University and Fuzhou University. Currently, I hold the position of Research Assistant in the Financial Technology Laboratory. In this role, I have had the privilege of receiving meticulous guidance from Professor Yong Tang, who leads the Data Mining (DM) group within the National Social Science Foundation.
     <br><br>
-    I am currently seeking opportunities to pursue a Master's degree. If you are interested in any aspect of me, I would love to chat and collaborate, please email me at - onglinguge@gmail.com
+   I am actively preparing for and seeking opportunities to pursue a master's degree, with the aim of further advancing my academic journey. Should you have any interest in or inquiries regarding my academic background, research experience, or future plans, I cordially invite you to contact me via email at onglinguge@gmail.com. I would be profoundly grateful for the opportunity to engage in further dialogue with you, sharing insights into my educational experiences and professional aspirations.
 </div>
 
 ---
