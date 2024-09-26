@@ -30,7 +30,7 @@ Here is **Liao Honglin (Honglin Liao,廖泓霖)**.
 </div>
 
 ---
-# Publications
+
 ## Research Interests
 
 - Applied Machine Learning
@@ -44,7 +44,7 @@ My current research is focused on addressing the real-world challenges encounter
 </ul>
 
 ---
-
+# Publications
 ## Journal Paper
 
 - [LEET: stock market forecast with long-term emotional change enhanced temporal model](https://doi.org/10.7717/peerj-cs.1969)
@@ -89,6 +89,7 @@ My current research is focused on addressing the real-world challenges encounter
 - Jul 2023: The 18th National College Students Intelligent Car Competition South China Region **Outstanding Award**
 - Feb 2023: The 25th International Mathematical Contest for University Students **S Award**
 ---
+
 
 ## News and Updates
 
