@@ -20,68 +20,34 @@ classification;
 <br>• **Achievement**:  
 Authored a research paper and submitted to IEEE Transactions on Network Science and Engineering. 
 
-- **Xiamen Fanshi Intelligent Technology Co., Ltd.**(May 2024 - Aug 2024)
-<br>Development of an Indoor Positioning Miniature UAV for Industrial Site Inspection
-<br>Embedded Software Engineer (supervised by Prof. Jiang Hao, Fuzhou University) 
-<br>• **Outline**:  
-Developed a miniature UAV capable of indoor positioning to automate inspections in industrial settings; 
-<br>• **Responsibilities**:  
-Tested UAV hardware circuit boards, implemented Mavlink UAV communication, developed indoor inspection algorithms, and 
-designed upper computer software systems; 
-<br>• **Achievement**:  
-The drone prototype was successfully realized and showcased in Fuzhou Innovation Park. 
-
-- **Fujian Qipu Xinchuang Technology Co., Ltd.**(June 2023 - Aug 2023) 
-<br>Development of an Intelligent Mining Ventilation Door Control System
-<br>Embedded Engineer (supervised by Prof.Li Binglei, Fuzhou University)
-<br>• **Outline**:  
-Addressed the challenge of remote ventilation door control in mining environments by designing a fast door motor 
-communication control system using ESP32; 
-<br>• **Responsibilities**:  
-Designed communication circuit boards using Altium Designer, customized MQTT communication protocols, and developed 
-software application systems; 
-<br>• **Achievement**:  
-Applied the designed product in industrial production, with plans to apply for one patent. 
-
 ---
 
 ## Research Projects
 
-- **Development of a Self-balancing Unicycle Robot Based on Visual Inspection**(Jun 2023-present)
-<br>National Undergraduate Innovation and Entrepreneurship Training Programme
-<br>Supervisor: Prof. Wang Wu, Fuzhou University 
-<br>• **Outline**:  
-Developed a unicycle robot capable of adapting to complex terrain and conducting visual inspections in realistic                
-industrial production environments; 
+- **Research on Marketization Allocation of Public Data Assets**(Jun 2023-present)
+<br>National Social Science Foundation Project
+<br>Supervisor: Prof. Yong Tang, Fuzhou University 
+<br>• **Outline**:
+Deeply mining the characteristics of public and market-related data and further evaluate its inner value; 
 <br>• **Responsibilities**:  
-Utilised Altium Designer for circuit design, conducted dynamic modelling of the -unicycle robot, and developed machine vision 
-in the field of robotics; 
+Researching the impact of market sentiment on the stock market and quantitative analysis of market sentiment using deep learning and other AI models; 
 <br>• **Achievement**:  
-Secured a research grant over $3000; Authored a international conference paper and a software copyright. 
+Published [LEET: stock market forecast with long-term emotional change enhanced temporal model](https://doi.org/10.7717/peerj-cs.1969) in *PeerJ Computer Science, 2024*.( **JCR Q1**, **IF 3.5**) as **First author and corresponding author**.
 
-- **Intelligent Detection and Monitoring System for Underwater Fish**(Jun 2023-Jun 2024) 
+
+- **Stock Price Prediction Research Based on RoBERTa-Informer**(Jun 2023-Jun 2024) 
+<br>Supervisor: Prof. Yong Tang, Fuzhou University
+<br>• **Responsibilities**:  
+Project proposal and opening report writing, algorithm construction and experimentation, completion of project conclusion report and defense PPT production; 
+<br>• **Achievement**:  
+Received provincial scientific innovation fund of **¥10,000**for research, excellent conclusion(Only one in Economic and Managememt college).
+
+- **Quantitative Finance and Fintech under Artificial Intelligence (Application of Machine Learning in Business Data Analysis and Stock Market Prediction)**(Aug 2023-Sep 2023) 
 <br>Provincial Undergraduate Innovation and Entrepreneurship Training Programme
-<br>Supervisor: Prof. Chen Weiling, Fuzhou University 
-<br>• **Outline**:  
-Elevated the application of the YOLO object detection algorithm in the field of underwater biology and visualized the analysis 
-of detection data; 
+<br>Supervisor: Prof. Patrick Rebeschini,  Oxford University
 <br>• **Responsibilities**:  
-Established a client cloud platform and a mini-program app to analyse and provide real-time querying of detection information 
-visually; 
-<br>• **Achievement**: 
-Secured a research grant over $1500; Completed the final project completion report. 
+Exploring the application of deep learning models based on self-attention mechanism in quantitative trading
 
-- **Application of Microcontrollers to the Design of Intelligent Bodies and Digital Manufacturing such as 3D Printing**(May 2023-Jul 2023) 
-<br>Supervisor: Prof. Michael Littman, MAE Departmental Representative and Director of Undergraduate Studies, School of Engineering 
-and Applied Science, Princeton University 
-<br>• **Outline**:  
-Explored the analysis of the PD controller-based DC motor control model in the field of 3D Printing and conducted research on 
-its applications; 
-<br>• **Responsibilities**:  
-Analysed the micro-electromechanical systems of digital control circuits using Falstad and Tinkercad based on mechanical 
-automation feedback; 
-<br>• **Achievement**:  
-Authored a international conference paper and received a recommendation letter from the supervisor.
 ---
 
 <br>Under Construction

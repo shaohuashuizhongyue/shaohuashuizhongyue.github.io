@@ -2,6 +2,7 @@
 layout: page
 ---
 
+
 <style>
     .timeline {
         text-align: justify;
@@ -13,9 +14,9 @@ layout: page
 
 # About Me
 
-<img src="/images/jiachenghuang.jpg" class="floatpic" width="360" height="480">
+<img src="/images/Songjiang.jpg" class="floatpic" width="360" height="480">
 
-Here is **Jiacheng Huang (Kano,黄家成)**.
+Here is **Liao Honglin (Honglin Liao,廖泓霖)**.
 
 <style>
     .justify-text {
@@ -24,50 +25,41 @@ Here is **Jiacheng Huang (Kano,黄家成)**.
 </style>
 
 <div class="justify-text">
-    Welcome to my academic homepage! I am a final-year undergrad majoring in EE at Fuzhou University and Maynooth University (Combined Degrees). At present, I am working as a research assistant at the Institute of Electrical Power Systems and Equipment, under the supervision of Prof.Jiang Hao and Dr.Yin Cunyi.
-    <br><br>
-    I am currently seeking opportunities to pursue a Master's degree. If you are interested in any aspect of me, I would love to chat and collaborate, please email me at - jiacheng.huang@ieee.org
+    Welcome to my academic homepage! I am a third-year undergraduate student pursuing a dual degree in Robotics and Intelligent Devices at Maynooth University and Fuzhou University. Currently, I hold the position of Research Assistant in the Financial Technology Laboratory. In this role, I have had the privilege of receiving meticulous guidance from Professor Yong Tang, who leads the Data Mining (DM) group within the National Social Science Foundation.
+    <br>
+   I am actively preparing for and seeking opportunities to pursue a master's degree, with the aim of further advancing my academic journey. Should you have any interest in or inquiries regarding my academic background, research experience, or future plans, I cordially invite you to contact me via email at onglinguge@gmail.com. I would be profoundly grateful for the opportunity to engage in further dialogue with you, sharing insights into my educational experiences and professional aspirations.
 </div>
 
 ---
 
-## Research Interests
+## Research Interests and Motivation
 
 - Applied Machine Learning
-- Industrial Internet of Things
-- Intelligent Sensor
+- Risk Management
+- Engineering Management
 
 <ul class="timeline">
 
-My current research is focused on addressing the real-world challenges encountered by <strong>artificial intelligence</strong>. I am particularly interested in the application of <strong>machine learning</strong> in Industrial <strong>IoT</strong> and smart <strong>sensors</strong>. In the future, cutting-edge technologies in artificial intelligence and IoT will have a constructive impact on people's lives. I am eager to contribute my skills to this significant endeavor and enhance societal well-being.
+My current research primarily focuses on exploring<strong> the applications of artificial intelligence (AI) in the fields of economics and engineering management</strong>. This study is dedicated to organically integrating the macroscopic perspective of economics with the meticulous operations of engineering management into the architectural design and training processes of AI models. The exceptional capabilities of AI in processing vast amounts of data, recognizing complex patterns, and making real-time decisions offer unprecedented opportunities for creating more resilient, efficient, and secure management systems.
+<br>This interdisciplinary integration not only holds the promise of significantly enhancing AI performance in system management but also has the potential to make substantial contributions to the efficient, stable, and orderly functioning of society and the world at large. By synthesizing the strengths of these diverse fields, I aim to develop innovative solutions capable of addressing the complex challenges of modern society, thereby advancing management science and technology, and ultimately contributing to the enhancement of human well-being.
+<br>Through this research, I aspire to bridge the gap between theoretical concepts and practical applications, leveraging AI's computational power to tackle intricate economic and managerial problems. The goal is to create adaptive and intelligent systems that can navigate the complexities of global markets, optimize resource allocation, and improve decision-making processes across various sectors. This work not only pushes the boundaries of AI applications but also seeks to establish a new paradigm in interdisciplinary research, fostering collaboration between traditionally distinct academic domains for the betterment of society.
 
 </ul>
 
 ---
-
 ## News and Updates
 
 <ul class="timeline">
-
+    <li>Sep 2024: (award)Received the Fuzhou University Comprehensive Third-Class Scholarship.</li>
     <li>Aug 2024: (paper)Our paper has been accepted by <strong><font color='red'>KDD 2024</font></strong> (CCF-A). See you in Spain!</li>
-    <li>Jun 2024: (paper)Our paper BLEGuard has been accepted to <strong><font color='red'>MobiSys 2024</font></strong> (CCF-B)as a poster paper. See you in Japan!</li>
-    <li>Mar 2024: (paper)Our paper LEET accepted by <strong><font color='red'>PeerJ Computer Science 2024</font></strong> (IF=3.5).</li>
-    <li>Mar 2024: (award)Received the Fuzhou University Comprehensive Third-Class Scholarship.</li>
+    <li>Aug 2024: (certificate)Successfully passed the Financial Risk Manager (<strong>FRM</strong>) certification Level I issued by the Global Association of Risk Professionals (GARP)!</li>
+    <li>Apr 2024: (paper)Our paper LEET accepted by <strong><font color='red'>PeerJ Computer Science 2024</font></strong> (IF=3.5).</li> 
     <li>Feb 2024: (award)Received the "H Award" in the MCM competition.</li>
-    <li>Dec 2023: (award)Received the Fuzhou University Individual Award.</li>
-    <li>Dec 2023: (paper)Our paper on Unicycle Robot accepted by <strong>MEAI 2023</strong>.</li>
-    <li>Dec 2023: (award)Received <strong>Second Prize</strong> in Fuzhou University College Students Entrepreneurship Plan Competition.</li>
-    <li>Dec 2013: (award)Received <strong><font color='red'>First Prize and Best Technical Innovation Award</font></strong> in Cross-Strait Information Service Innovation Competition and Computer Software Design Competition.</li>
-    <li>Dec 2023: (award)Received <strong>International Bronze Award</strong> in China International "Internet Plus" College Students Innovation and Entrepreneurship Competition.</li>
     <li>Nov 2023: (paper)Our paper on Automatic Pricing accepted by <strong>IEECT 2023</strong>.</li>
-    <li>Nov 2023: (activity)Became a research assistant at the Power System and Equipment Industry Research Institute under the guidance of Prof. <strong>Jiang Hao</strong>.</li>
-    <li>Sep 2023: (service)Served as vice Captain of the Fuzhou University 206 Intelligent Vehicle Team.</li>
-    <li>Aug 2023: (award)Received <strong><font color='red'>National Second Prize</font></strong> in College Students Internet of Things Technology and Application Competition.</li>
-    <li>Aug 2013: (award)Received <strong>Third Prize</strong> in National College Students Electronic Design Competition Fujian Division.</li>
-    <li>Jul 2023: (award)Received <strong>Outstanding Award</strong> in National College Students Intelligent Car Competition South China Region.</li>
-    <li>Jun 2023: (activity)Our project on Unicycle Robot is rated as a national project.</li>
-    <li>Mar 2023: (award)Received the Fuzhou University Comprehensive Third-Class Scholarship.</li>
-    <li>Mar 2022: (award)Received the Fuzhou University Comprehensive Second-Class Scholarship.</li>
+    <li>Nov 2023: (activity)Became a research assistant in the Financial Technology Laboratory under the guidance of Prof. <strong>Yong Tang</strong>.</li>
+
+
+
 
 </ul>
 

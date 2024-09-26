@@ -2,12 +2,12 @@ title: Honglin Liao
 # tagline: Two roads diverged in woods, I took the one less traveled by.
 description: Two roads diverged in woods, I took the one less traveled by.
 #Comment out url when working locally to resolve base urls correctly
-url: https://honglinliao.com/
+url: https://honglinliao.com
 
 # Owner/author information
 owner:
   name: Honglin Liao 
-  avatar: sun.jpg
+  avatar: /Songjiang.jpg
 #  bio:
   email: onglinguge@gmail.com
   github: shaohuashuizhongyue
@@ -34,8 +34,8 @@ google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
 links:
   - title: About Me
     url: /
-  - title: Resume
-    url: /file/cv-Jiacheng Huang.pdf
+  #- title: Resume
+  #  url: /file/cv-Jiacheng Huang.pdf
   - title: Publications
     url: /publications/
   - title: RESEARCH 
@@ -46,8 +46,8 @@ links:
   #  url: /news/
   #- title: Hobbies
   #  url: /hobbies/
-  - title: Blogs
-    url: /blogs/
+  #- title: Blogs
+   # url: /blogs/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: Asia/Shanghai
@@ -79,7 +79,7 @@ kramdown:
 
 # disqus settings:
 disqus:
-  shortname: kanohuang
+  shortname: Diven
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "minimal-mistakes.sublime-project", "minimal-mistakes.sublime-workspace"]
