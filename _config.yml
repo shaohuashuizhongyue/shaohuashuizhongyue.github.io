@@ -10,6 +10,7 @@ owner:
  # avatar: Songjiang.jpg 
 #  bio:
   email: onglinguge@gmail.com
+  gravatar: true
   github: shaohuashuizhongyue
   scholar: https://scholar.google.com/citations?user=glMCPm4AAAAJ&hl=zh-CN
   # orcid: https://orcid.org/0009-0004-2470-0359
