@@ -25,6 +25,11 @@ title: Awards
 <br>Check whether the identity of participants meets the standard, actively deal with equipment problems in the venue, and be responsible for maintaining the order of the venue with the person in charge of on-site order management.
 <br>Individual volunteer service 8h
 
+<div>
+<img src="/images/KDD2024.jpg">
+</div>
+<br>
+
 
 
 
