@@ -80,13 +80,14 @@ title: J.P. Morgan Quantitative Project
        Vp_list[i]=np.sqrt(np.dot(weights,np.dot(Cov_LR,weights.T)))  
        SR_list[i]=Rp_list[i]/Vp_list[i]
 
-   #展示结果    
-   plt.figure(figsize=(8, 4), dpi=100, facecolor='white')  
-   plt.scatter(Vp_list, Rp_list)  
-   plt.title('The relationship between expected portfolio return and volatility', pad=20)  
-   plt.xlabel('Volatility', labelpad=20)  
-   plt.ylabel('Expected Return', labelpad=20)  
-   plt.grid()
+    #展示结果    
+    plt.figure(figsize=(8, 4), dpi=100, facecolor='white')  
+    plt.scatter(Vp_list, Rp_list)  
+    plt.title('The relationship between expected portfolio return and volatility', pad=20)  
+    plt.xlabel('Volatility', labelpad=20)  
+    plt.ylabel('Expected Return', labelpad=20)  
+    plt.grid()
+
 ````
 
 <center>
@@ -131,16 +132,16 @@ title: J.P. Morgan Quantitative Project
       Vp_target.append(result_new['fun'])
 
    #展示结果    
-   plt.figure(figsize=(8, 4))  
-   plt.scatter(Vp_list,Rp_list,c=SR_list, cmap='YlGnBu', marker='o')  
-   plt.colorbar(label='Sharpe Ratio')  
-   plt.plot(Vp_target,Rp_target,'r-',label="efficient frontier")
-   plt.scatter(sdp, rp, marker='*', color='r', s=300, label='Max Sharpe Ratio')  
-   plt.title('Efficient Frontier')  
-   plt.xlabel('Annualized Volatility')  
-   plt.ylabel('Annualized Return')  
-   plt.legend(labelspacing=0.8)  
-   plt.show()
+    plt.figure(figsize=(8, 4))  
+    plt.scatter(Vp_list,Rp_list,c=SR_list, cmap='YlGnBu', marker='o')  
+    plt.colorbar(label='Sharpe Ratio')  
+    plt.plot(Vp_target,Rp_target,'r-',label="efficient frontier")
+    plt.scatter(sdp, rp, marker='*', color='r', s=300, label='Max Sharpe Ratio')  
+    plt.title('Efficient Frontier')  
+    plt.xlabel('Annualized Volatility')  
+    plt.ylabel('Annualized Return')  
+    plt.legend(labelspacing=0.8)  
+    plt.show()
 ````
 <center>
 <img src = "/blogs/206yingjian.assets/Efficient Frontier.png">
@@ -179,29 +180,29 @@ title: J.P. Morgan Quantitative Project
     def Slope_F(w):
           return -F(w)[-1]
 
-   w1=np.array([0.2, 0.2, 0.2, 0.2, 0.2])
-   cons_Slope=({'type':'eq','fun':lambda x:np.sum(x)-1})
+    w1=np.array([0.2, 0.2, 0.2, 0.2, 0.2])
+    cons_Slope=({'type':'eq','fun':lambda x:np.sum(x)-1})
 
-   result_slope=sco.minimize(fun=Slope_F,x0=w1,method='SLSQP',bounds=bnds,constraints=cons_Slope)
+    result_slope=sco.minimize(fun=Slope_F,x0=w1,method='SLSQP',bounds=bnds,constraints=cons_Slope)
 
-   Rm=np.sum(Manual_LR*wm)
-   Vm=(Rm-Rf)/Slope
-   Rp_CML=np.linspace(Rf,0.95,200)
-   Vp_CML=(Rp_CML-Rf)/Slope
+    Rm=np.sum(Manual_LR*wm)
+    Vm=(Rm-Rf)/Slope
+    Rp_CML=np.linspace(Rf,0.95,200)
+    Vp_CML=(Rp_CML-Rf)/Slope
 
-   #展示结果    
-   plt.figure(figsize=(8, 4))  
-   plt.scatter(Vp_list,Rp_list,c=SR_list, cmap='YlGnBu', marker='o')  
-   plt.colorbar(label='Sharpe Ratio')  
-   plt.plot(Vp_target,Rp_target,'r-',label="efficient frontier")
-   plt.plot(Vp_vmin,Rp_vmin,'g*',label='Global minimum volatility',markersize=13)
-   plt.plot(Vp_CML,Rp_CML,'b--',label='market portfolio',markersize=13)
-   plt.scatter(sdp, rp, marker='*', color='r', s=300, label='Max Sharpe Ratio')  
-   plt.title('Efficient Frontier')  
-   plt.xlabel('Annualized Volatility')  
-   plt.ylabel('Annualized Return')  
-   plt.legend(labelspacing=0.8)  
-   plt.show()
+    #展示结果    
+    plt.figure(figsize=(8, 4))  
+    plt.scatter(Vp_list,Rp_list,c=SR_list, cmap='YlGnBu', marker='o')  
+    plt.colorbar(label='Sharpe Ratio')  
+    plt.plot(Vp_target,Rp_target,'r-',label="efficient frontier")
+    plt.plot(Vp_vmin,Rp_vmin,'g*',label='Global minimum volatility',markersize=13)
+    plt.plot(Vp_CML,Rp_CML,'b--',label='market portfolio',markersize=13)
+    plt.scatter(sdp, rp, marker='*', color='r', s=300, label='Max Sharpe Ratio')  
+    plt.title('Efficient Frontier')  
+    plt.xlabel('Annualized Volatility')  
+    plt.ylabel('Annualized Return')  
+    plt.legend(labelspacing=0.8)  
+    plt.show()
 ````
 <center>
 <img src = "/blogs/206yingjian.assets/Total_Efficient Frontier.png">
