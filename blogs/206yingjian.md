@@ -77,7 +77,8 @@ title: J.P. Morgan Quantitative Project
        x=np.random.rand(n)  #生成n个随机权重
        weights=x/sum(x)     #权重归一化，使其和为1
        Rp_list[i]=np.sum(weights*Manual_LR)  
-       Vp_list[i]=np.sqrt(np.dot(weights,np.dot(Cov_LR,weights.T)))  
+       Vp_list[i]=np.sqrt(np.dot(weights,np.dot
+(Cov_LR,weights.T)))  
        SR_list[i]=Rp_list[i]/Vp_list[i]
 
     #展示结果    
@@ -114,11 +115,10 @@ title: J.P. Morgan Quantitative Project
 
     #权重决定重要性
     w0=np.array([0.2, 0.2, 0.2, 0.2, 0.2])  
-
     result=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons)
- 
     cons_vmin=({'type':'eq','fun':lambda x:np.sum(x)-1})
-    result_vmin=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons_vmin)
+    result_vmin=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=
+cons_vmin)
 
     Vp_vmin=result_vmin['fun']
     Rp_vmin=np.sum(Manual_LR*result_vmin['x'])
@@ -127,8 +127,9 @@ title: J.P. Morgan Quantitative Project
     Vp_target=[]
 
     for r in Rp_target:
-       cons_new=({'type':'eq','fun':lambda x:np.sum(x)-1},{'type':'eq','fun':lambda x:f(x)[0]-r})
-       result_new=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons_new)
+      cons_new=({'type':'eq','fun':lambda x:np.sum(x)-1},{'type':'eq','fun':lambda x:f(x)[0]-r})
+      result_new=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=
+cons_new)
        Vp_target.append(result_new['fun'])
 
     #展示结果    
@@ -182,8 +183,8 @@ title: J.P. Morgan Quantitative Project
 
     w1=np.array([0.2, 0.2, 0.2, 0.2, 0.2])
     cons_Slope=({'type':'eq','fun':lambda x:np.sum(x)-1})
-
-    result_slope=sco.minimize(fun=Slope_F,x0=w1,method='SLSQP',bounds=bnds,constraints=cons_Slope)
+    result_slope=sco.minimize(fun=Slope_F,x0=w1,method='SLSQP',bounds=bnds,constraints
+=cons_Slope)
 
     Rm=np.sum(Manual_LR*wm)
     Vm=(Rm-Rf)/Slope
