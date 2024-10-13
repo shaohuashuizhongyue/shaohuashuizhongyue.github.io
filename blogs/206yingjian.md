@@ -127,6 +127,23 @@ $$
    plt.show()
 ````
 #### 必要参数设置
+> 股价收益率不能处理对称处理上涨和下跌，增加50%和减少50%的影响不会相互抵消,多期收益计算容易产生累积误差，适合分析不连续性的收益事件，如分红和其他一次性收益。
+> 对数收益率：假设市场是连续复利的，对数收益率更反映真实收益，上下波动对称，且多期收益可以简单相加而不产生累积误差，更适合正态分布假设,长期投资和复杂的金融模型适合使用对数收益率。
+
+````python
+```
+   #计算股票的对数收益率并且展示描述性统计指标
+   Log_return=np.log(data/data.shift(1))
+   #计算股票的年平均收益率  通过计算该序列的算术平均值的到平均对数收益率
+   Manual_LR=Log_return.mean()*252
+   #计算股票收益率的年化波动率  计算平均波动率后年化
+   Vol_LR=Log_return.std()*np.sqrt(252)
+   #计算股票的协方差矩阵并进行年化处理
+   Cov_LR=Log_return.cov()*252
+   #计算股票的相关系数矩阵
+   Corr_LR=Log_return.corr()
+
+````
 
 #### 资本市场线
 ````python
@@ -165,8 +182,44 @@ $$
    plt.legend(labelspacing=0.8)  
    plt.show()
 ````
-> 股价收益率不能处理对称处理上涨和下跌，增加50%和减少50%的影响不会相互抵消,多期收益计算容易产生累积误差，适合分析不连续性的收益事件，如分红和其他一次性收益。
-> 对数收益率：假设市场是连续复利的，对数收益率更反映真实收益，上下波动对称，且多期收益可以简单相加而不产生累积误差，更适合正态分布假设,长期投资和复杂的金融模型适合使用对数收益率。
+
+#### 基于cvxopt的资产组合配置
+
+````python
+```
+   #计算每个股票日收益率的百分比变化并且移除掉有缺失值的行  
+   returns = data.pct_change().dropna()  
+ 
+   cov_matrix = returns.cov() * 252  # 年化协方差矩阵  
+   print(cov_matrix)  
+
+   #选用cvxopt，作为凸优化问题的工具的默认参数已经比较高效，如果想进一步优化性能，可以
+   #通过优化矩阵表示（如利用系数矩阵）和调节求解器参数（如迭代次数、容忍度）来改善性能
+
+   #投资组合优化  
+   def optimize_portfolio(cov_matrix, mean_returns, target_return):  
+       n = len(mean_returns)  
+       P = matrix(cov_matrix.values)  
+       q = matrix(np.zeros((n, 1)))  
+       G = matrix(np.vstack((-np.array(mean_returns), -np.identity(n))))  
+       h = matrix(np.hstack((-target_return, np.zeros(n))))  
+       A = matrix(1.0, (1, n))  
+       b = matrix(1.0)  
+
+       solvers.options['show_progress'] = False  
+       sol = solvers.qp(P, q, G, h, A, b)  
+
+       return sol['x']  
+
+   # 目标返回  
+   target_return = 0.1  # 10% 的目标年化收益率  
+   mean_returns = returns.mean() * 252  
+
+   optimal_weights = optimize_portfolio(cov_matrix, mean_returns, target_return)  
+   print("\nOptimal Portfolio Weights:")  
+   print([round(w, 4) for w in optimal_weights])  
+
+````
 
 ---
 
