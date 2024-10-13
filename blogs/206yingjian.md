@@ -184,8 +184,8 @@ title: J.P. Morgan Quantitative Project
 
     w1=np.array([0.2, 0.2, 0.2, 0.2, 0.2])
     cons_Slope=({'type':'eq','fun':lambda x:np.sum(x)-1})
-    result_slope=sco.minimize(fun=Slope_F,x0=w1,method='SLSQP',bounds=bnds,constraints
-=cons_Slope)
+    result_slope=sco.minimize(fun=Slope_F,x0=w1,method='SLSQP',bounds=bnds,
+constraints=cons_Slope)
 
     Rm=np.sum(Manual_LR*wm)
     Vm=(Rm-Rf)/Slope
