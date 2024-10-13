@@ -95,6 +95,7 @@ title: J.P. Morgan Quantitative Project
 <img src = "/blogs/206yingjian.assets/The relationship between expected portfolio return and volatility.png">
 </center>
 
+---
 #### 投资组合的有效前沿
 ````python
 ```
@@ -149,7 +150,7 @@ title: J.P. Morgan Quantitative Project
 <img src = "/blogs/206yingjian.assets/Efficient Frontier.png">
 </center>
 
-
+---
 #### 必要参数设置
 > 股价收益率不能处理对称处理上涨和下跌，增加50%和减少50%的影响不会相互抵消,多期收益计算容易产生累积误差，适合分析不连续性的收益事件，如分红和其他一次性收益。
 > 对数收益率：假设市场是连续复利的，对数收益率更反映真实收益，上下波动对称，且多期收益可以简单相加而不产生累积误差，更适合正态分布假设,长期投资和复杂的金融模型适合使用对数收益率。
@@ -168,7 +169,7 @@ title: J.P. Morgan Quantitative Project
     Corr_LR=Log_return.corr()
 
 ````
-
+---
 #### 资本市场线
 ````python
 ``` 
@@ -211,6 +212,7 @@ constraints=cons_Slope)
 <img src = "/blogs/206yingjian.assets/Total_Efficient Frontier.png">
 </center>
 
+---
 #### 基于cvxopt的资产组合配置
 
 ````python
