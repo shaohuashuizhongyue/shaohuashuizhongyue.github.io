@@ -210,7 +210,7 @@ constraints=cons_Slope)
 <center>
 <img src = "/blogs/206yingjian.assets/Total_Efficient Frontier.png">
 </center>
-<br>
+
 #### 基于cvxopt的资产组合配置
 
 ````python
