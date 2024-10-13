@@ -117,8 +117,8 @@ title: J.P. Morgan Quantitative Project
     w0=np.array([0.2, 0.2, 0.2, 0.2, 0.2])  
     result=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons)
     cons_vmin=({'type':'eq','fun':lambda x:np.sum(x)-1})
-    result_vmin=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=
-cons_vmin)
+    result_vmin=sco.minimize
+   (fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons_vmin)
 
     Vp_vmin=result_vmin['fun']
     Rp_vmin=np.sum(Manual_LR*result_vmin['x'])
@@ -128,8 +128,8 @@ cons_vmin)
 
     for r in Rp_target:
       cons_new=({'type':'eq','fun':lambda x:np.sum(x)-1},{'type':'eq','fun':lambda x:f(x)[0]-r})
-      result_new=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=
-cons_new)
+      result_new=sco.minimize
+      (fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons_new)
        Vp_target.append(result_new['fun'])
 
     #展示结果    
