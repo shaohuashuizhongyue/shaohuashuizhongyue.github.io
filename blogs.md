@@ -10,8 +10,7 @@ title: Blogs
 
 ### 2024
 
-- [J.P. Morgan Quantitative Project](https://jiachenghuang.com//blogs/mobisys-24)<br>
-
+- [J.P. Morgan Quantitative Project](https://honglinliao.com//blogs/206yingjian)<br>
 - [毫米波雷达文献综述](https://jiachenghuang.com//blogs/mmWave)<br>
 - [毫米波雷达串口采集点云数据](https://jiachenghuang.com//blogs/mmWaveGUI)<br>
 
