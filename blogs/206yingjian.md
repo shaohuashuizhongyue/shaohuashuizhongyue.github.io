@@ -80,6 +80,10 @@ $$
    plt.grid()
 ````
 
+<center>
+<img src = "/blogs/206yingjian.assets/AD21.png">
+</center>
+
 #### 投资组合的有效前沿
 ````python
 ```
