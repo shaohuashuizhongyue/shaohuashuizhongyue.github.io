@@ -21,32 +21,10 @@ title: J.P. Morgan Quantitative Project
 
 <br>有效前沿作为代表了一组风险和预期回报之间的最佳组合，这些组合在给定的风险水平下提供了最高的预期回报，或者在给定的预期回报下具有最低的风险。
 
-#### 目标函数  
+<center>
+<img src = "/blogs/206yingjian.assets/Return Rate.png">
+</center>
 
-最小化投资组合的方差：  
-
-$$  
-\sigma_p^2 = \sum_{i=1}^{n} \sum_{j=1}^{n} w_i w_j \sigma_{ij}  
-$$  
-
-#### 约束条件  
-所有资产权重之和为 1（表示所有资金都被投资）：  
-
-$$  
-\sum_{i=1}^{n} w_i = 1  
-$$  
-
-投资组合的预期回报等于目标回报 $R_t$：  
-
-$$  
-\E(R_p) = \sum_{i=1}^{n} w_i E(R_i) = R_t  
-$$  
-
-非负权重（假设不允许卖空）：  
-
-$$  
-w_i \geq 0 \quad \forall i  
-$$
    
 ---
 ### 基础数据及其特征展示
