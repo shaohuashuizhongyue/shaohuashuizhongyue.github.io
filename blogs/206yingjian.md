@@ -110,10 +110,12 @@ title: J.P. Morgan Quantitative Project
 
    cons=({'type':'eq','fun':lambda x:np.sum(x)-1},{'type':'eq','fun':lambda x:f(x)[0]-0.15})
    bnds=((0,1),(0,1),(0,1),(0,1),(0,1))
-   w0=np.array([0.2, 0.2, 0.2, 0.2, 0.2])  #权重决定重要性
+
+   #权重决定重要性
+   w0=np.array([0.2, 0.2, 0.2, 0.2, 0.2])  
 
    result=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons)
-
+ 
    cons_vmin=({'type':'eq','fun':lambda x:np.sum(x)-1})
    result_vmin=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons_vmin)
 
