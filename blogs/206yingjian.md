@@ -97,51 +97,51 @@ title: J.P. Morgan Quantitative Project
 #### 投资组合的有效前沿
 ````python
 ```
-   import scipy.optimize as sco
+    import scipy.optimize as sco
 
    #必要参数构建
-   def f(w):
-      w=np.array(w)
-      Rp_opt=np.sum(w*Manual_LR)
-      Vp_opt=np.sqrt(np.dot(w,np.dot(Cov_LR,w.T)))
-      return np.array([Rp_opt,Vp_opt])
+    def f(w):
+       w=np.array(w)
+       Rp_opt=np.sum(w*Manual_LR)
+       Vp_opt=np.sqrt(np.dot(w,np.dot(Cov_LR,w.T)))
+       return np.array([Rp_opt,Vp_opt])
 
-   def Vmin_f(w):
-      return f(w)[1]
+    def Vmin_f(w):
+       return f(w)[1]
 
-   cons=({'type':'eq','fun':lambda x:np.sum(x)-1},{'type':'eq','fun':lambda x:f(x)[0]-0.15})
-   bnds=((0,1),(0,1),(0,1),(0,1),(0,1))
+    cons=({'type':'eq','fun':lambda x:np.sum(x)-1},{'type':'eq','fun':lambda x:f(x)[0]-0.15})
+    bnds=((0,1),(0,1),(0,1),(0,1),(0,1))
 
-   #权重决定重要性
-   w0=np.array([0.2, 0.2, 0.2, 0.2, 0.2])  
+    #权重决定重要性
+    w0=np.array([0.2, 0.2, 0.2, 0.2, 0.2])  
 
-   result=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons)
+    result=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons)
  
-   cons_vmin=({'type':'eq','fun':lambda x:np.sum(x)-1})
-   result_vmin=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons_vmin)
+    cons_vmin=({'type':'eq','fun':lambda x:np.sum(x)-1})
+    result_vmin=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons_vmin)
 
-   Vp_vmin=result_vmin['fun']
-   Rp_vmin=np.sum(Manual_LR*result_vmin['x'])
+    Vp_vmin=result_vmin['fun']
+    Rp_vmin=np.sum(Manual_LR*result_vmin['x'])
+ 
+    Rp_target=np.linspace(Rp_vmin,0.95,300)
+    Vp_target=[]
 
-   Rp_target=np.linspace(Rp_vmin,0.95,300)
-   Vp_target=[]
+    for r in Rp_target:
+       cons_new=({'type':'eq','fun':lambda x:np.sum(x)-1},{'type':'eq','fun':lambda x:f(x)[0]-r})
+       result_new=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons_new)
+       Vp_target.append(result_new['fun'])
 
-   for r in Rp_target:
-      cons_new=({'type':'eq','fun':lambda x:np.sum(x)-1},{'type':'eq','fun':lambda x:f(x)[0]-r})
-      result_new=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons_new)
-      Vp_target.append(result_new['fun'])
-
-   #展示结果    
-    plt.figure(figsize=(8, 4))  
-    plt.scatter(Vp_list,Rp_list,c=SR_list, cmap='YlGnBu', marker='o')  
-    plt.colorbar(label='Sharpe Ratio')  
-    plt.plot(Vp_target,Rp_target,'r-',label="efficient frontier")
-    plt.scatter(sdp, rp, marker='*', color='r', s=300, label='Max Sharpe Ratio')  
-    plt.title('Efficient Frontier')  
-    plt.xlabel('Annualized Volatility')  
-    plt.ylabel('Annualized Return')  
-    plt.legend(labelspacing=0.8)  
-    plt.show()
+    #展示结果    
+     plt.figure(figsize=(8, 4))  
+     plt.scatter(Vp_list,Rp_list,c=SR_list, cmap='YlGnBu', marker='o')  
+     plt.colorbar(label='Sharpe Ratio')  
+     plt.plot(Vp_target,Rp_target,'r-',label="efficient frontier")
+     plt.scatter(sdp, rp, marker='*', color='r', s=300, label='Max Sharpe Ratio')  
+     plt.title('Efficient Frontier')  
+     plt.xlabel('Annualized Volatility')  
+     plt.ylabel('Annualized Return')  
+     plt.legend(labelspacing=0.8)  
+     plt.show()
 ````
 <center>
 <img src = "/blogs/206yingjian.assets/Efficient Frontier.png">
@@ -153,16 +153,16 @@ title: J.P. Morgan Quantitative Project
 
 ````python
 ```
-   #计算股票的对数收益率并且展示描述性统计指标
-   Log_return=np.log(data/data.shift(1))
-   #计算股票的年平均收益率  通过计算该序列的算术平均值的到平均对数收益率
-   Manual_LR=Log_return.mean()*252
-   #计算股票收益率的年化波动率  计算平均波动率后年化
-   Vol_LR=Log_return.std()*np.sqrt(252)
-   #计算股票的协方差矩阵并进行年化处理
-   Cov_LR=Log_return.cov()*252
-   #计算股票的相关系数矩阵
-   Corr_LR=Log_return.corr()
+    #计算股票的对数收益率并且展示描述性统计指标
+    Log_return=np.log(data/data.shift(1))
+    #计算股票的年平均收益率  通过计算该序列的算术平均值的到平均对数收益率
+    Manual_LR=Log_return.mean()*252
+    #计算股票收益率的年化波动率  计算平均波动率后年化
+    Vol_LR=Log_return.std()*np.sqrt(252)
+    #计算股票的协方差矩阵并进行年化处理
+    Cov_LR=Log_return.cov()*252
+    #计算股票的相关系数矩阵
+    Corr_LR=Log_return.corr()
 
 ````
 
