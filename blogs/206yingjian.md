@@ -81,7 +81,7 @@ $$
 ````
 
 <center>
-<img src = "/blogs/206yingjian.assets/AD21.png">
+<img src = "/blogs/206yingjian.assets/The relationship between expected portfolio return and volatility.png">
 </center>
 
 #### 投资组合的有效前沿
@@ -130,6 +130,9 @@ $$
    plt.legend(labelspacing=0.8)  
    plt.show()
 ````
+<center>
+<img src = "/blogs/206yingjian.assets/Efficient Frontier.png">
+</center>
 
 #### 必要参数设置
 > 股价收益率不能处理对称处理上涨和下跌，增加50%和减少50%的影响不会相互抵消,多期收益计算容易产生累积误差，适合分析不连续性的收益事件，如分红和其他一次性收益。
@@ -186,6 +189,9 @@ $$
    plt.legend(labelspacing=0.8)  
    plt.show()
 ````
+<center>
+<img src = "/blogs/206yingjian.assets/Total_Efficient Frontier.png">
+</center>
 
 #### 基于cvxopt的资产组合配置
 
