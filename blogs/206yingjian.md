@@ -76,8 +76,8 @@ title: J.P. Morgan Quantitative Project
     for i in np.arange(I):
        x=np.random.rand(n)  #生成n个随机权重
        weights=x/sum(x)     #权重归一化，使其和为1
-       Rp_list[i]=np.sum(weights*Manual_LR)   #收益
-       Vp_list[i]=np.sqrt(np.dot(weights,np.dot(Cov_LR,weights.T)))  #波动
+       Rp_list[i]=np.sum(weights*Manual_LR)  
+       Vp_list[i]=np.sqrt(np.dot(weights,np.dot(Cov_LR,weights.T)))  
        SR_list[i]=Rp_list[i]/Vp_list[i]
 
    #展示结果    
