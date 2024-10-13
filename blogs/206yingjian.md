@@ -125,6 +125,74 @@ $$
    plt.legend(labelspacing=0.8)  
    plt.show()
 ````
+
+#### 投资组合可行解
+
+````python
+```
+    #随机进行2000次模拟  
+    #Rp_list,Vp_list分别存储每个模拟投资的预期收益率和波动率
+    n=5   #五只股票五个投资组合
+    I=2000
+    Rp_list=np.ones(I)  #预期收益率
+    Vp_list=np.ones(I)  #波动率
+    SR_list=np.ones(I)  #夏普比率
+
+    #模拟过程
+    for i in np.arange(I):
+       x=np.random.rand(n)  #生成n个随机权重
+       weights=x/sum(x)     #权重归一化，使其和为1
+       Rp_list[i]=np.sum(weights*Manual_LR)   #收益
+       Vp_list[i]=np.sqrt(np.dot(weights,np.dot(Cov_LR,weights.T)))  #波动
+       SR_list[i]=Rp_list[i]/Vp_list[i]
+
+   #展示结果    
+   plt.figure(figsize=(8, 4), dpi=100, facecolor='white')  
+   plt.scatter(Vp_list, Rp_list)  
+   plt.title('The relationship between expected portfolio return and volatility', pad=20)  
+   plt.xlabel('Volatility', labelpad=20)  
+   plt.ylabel('Expected Return', labelpad=20)  
+   plt.grid()
+
+````
+#### 资本市场线
+````python
+```
+    #必要参数构建
+    Rf=0.03  #无风险利率
+    def F(w):
+       w=np.array(w)
+       Rp_opt=np.sum(w*Manual_LR)
+       Vp_opt=np.sqrt(np.dot(w,np.dot(Cov_LR,w.T)))
+       Slope=(Rp_opt-Rf)/Vp_opt
+       return np.array([Rp_opt,Vp_opt,Slope])
+
+    def Slope_F(w):
+          return -F(w)[-1]
+
+   w1=np.array([0.2, 0.2, 0.2, 0.2, 0.2])
+   cons_Slope=({'type':'eq','fun':lambda x:np.sum(x)-1})
+   result_slope=sco.minimize(fun=Slope_F,x0=w1,method='SLSQP',bounds=bnds,constraints=cons_Slope)
+   Rm=np.sum(Manual_LR*wm)
+   Vm=(Rm-Rf)/Slope
+   Rp_CML=np.linspace(Rf,0.95,200)
+   Vp_CML=(Rp_CML-Rf)/Slope
+
+   #展示结果    
+   plt.figure(figsize=(8, 4))  
+   plt.scatter(Vp_list,Rp_list,c=SR_list, cmap='YlGnBu', marker='o')  
+   plt.colorbar(label='Sharpe Ratio')  
+   plt.plot(Vp_target,Rp_target,'r-',label="efficient frontier")
+   plt.plot(Vp_vmin,Rp_vmin,'g*',label='Global minimum volatility',markersize=13)
+   plt.plot(Vp_CML,Rp_CML,'b--',label='market portfolio',markersize=13)
+   plt.scatter(sdp, rp, marker='*', color='r', s=300, label='Max Sharpe Ratio')  
+   plt.title('Efficient Frontier')  
+   plt.xlabel('Annualized Volatility')  
+   plt.ylabel('Annualized Return')  
+   plt.legend(labelspacing=0.8)  
+   plt.show()
+````
+
 ---
 
 ### 核心工具介绍
