@@ -9,7 +9,9 @@ title: J.P. Morgan Quantitative Project
 ---
 
 ### 🔥Task1 
+
 >选取五只股票进行有效前沿的绘制以及给定预期收益的最佳持仓配比求解
+
 
 ### 🍴 具体任务实现的算法
 
@@ -46,20 +48,37 @@ $$
 w_i \geq 0 \quad \forall i  
 $$
    
-<br>
-智能车竞赛不同于其他比赛，有着几乎所有比赛最长的准备周期以及不小的难度，需要平衡自己的学业与竞赛精力。如果将获得其奖项作为唯一的目标，无疑是性价比极低的~~不如去互联网+做PPT~~。
-
-<br>但是智能车也是一个学习嵌入式的舞台，你可以在这里学习到很多专业技能，提高自己的水平。同时，智能车竞赛的成果作为你的课设使用，也或者申请SRTP等。
-
 ---
 
-### 硬件成员工作介绍
+### 算法实现
+#### 投资组合可行解
 
-如果说软件是小车的灵魂，那么硬件就是小车的身躯。硬件的设计，很大程度上决定了小车的上限。
+````python
+```
+    #随机进行2000次模拟  
+    #Rp_list,Vp_list分别存储每个模拟投资的预期收益率和波动率
+    n=5   #五只股票五个投资组合
+    I=2000
+    Rp_list=np.ones(I)  #预期收益率
+    Vp_list=np.ones(I)  #波动率
+    SR_list=np.ones(I)  #夏普比率
 
-<br>硬件组主要负责智能车的**硬件开发和维护、结构设计与组装、测试程序编写**。在这里，通过设计和测试你自己的电路板，你可以学习到很多硬件相关的知识(如器件选型，PCB设计，焊接技巧等等)。
+    #模拟过程
+    for i in np.arange(I):
+       x=np.random.rand(n)  #生成n个随机权重
+       weights=x/sum(x)     #权重归一化，使其和为1
+       Rp_list[i]=np.sum(weights*Manual_LR)   #收益
+       Vp_list[i]=np.sqrt(np.dot(weights,np.dot(Cov_LR,weights.T)))  #波动
+       SR_list[i]=Rp_list[i]/Vp_list[i]
 
-<br>具体的软件介绍与操作流程会在下文提到，在B站的[***福州大学206智能车***](https://space.bilibili.com/3461573251172869?spm_id_from=333.337.0.0)官方账号也有我们录制的培训视频。
+   #展示结果    
+   plt.figure(figsize=(8, 4), dpi=100, facecolor='white')  
+   plt.scatter(Vp_list, Rp_list)  
+   plt.title('The relationship between expected portfolio return and volatility', pad=20)  
+   plt.xlabel('Volatility', labelpad=20)  
+   plt.ylabel('Expected Return', labelpad=20)  
+   plt.grid()
+````
 
 ---
 
