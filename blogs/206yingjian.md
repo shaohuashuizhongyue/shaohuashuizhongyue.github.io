@@ -79,7 +79,52 @@ $$
    plt.ylabel('Expected Return', labelpad=20)  
    plt.grid()
 ````
+#### 投资组合的有效前沿
+````python
+```
+   import scipy.optimize as sco
 
+   #必要参数构建
+   def f(w):
+      w=np.array(w)
+      Rp_opt=np.sum(w*Manual_LR)
+      Vp_opt=np.sqrt(np.dot(w,np.dot(Cov_LR,w.T)))
+      return np.array([Rp_opt,Vp_opt])
+
+   def Vmin_f(w):
+      return f(w)[1]
+
+   cons=({'type':'eq','fun':lambda x:np.sum(x)-1},{'type':'eq','fun':lambda x:f(x)[0]-0.15})
+   bnds=((0,1),(0,1),(0,1),(0,1),(0,1))
+   w0=np.array([0.2, 0.2, 0.2, 0.2, 0.2])  #权重决定重要性
+   result=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons)
+
+   cons_vmin=({'type':'eq','fun':lambda x:np.sum(x)-1})
+   result_vmin=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons_vmin)
+
+   Vp_vmin=result_vmin['fun']
+   Rp_vmin=np.sum(Manual_LR*result_vmin['x'])
+
+   Rp_target=np.linspace(Rp_vmin,0.95,300)
+   Vp_target=[]
+
+      for r in Rp_target:
+       cons_new=({'type':'eq','fun':lambda x:np.sum(x)-1},{'type':'eq','fun':lambda x:f(x)[0]-r})
+       result_new=sco.minimize(fun=Vmin_f,x0=w0,method='SLSQP',bounds=bnds,constraints=cons_new)
+       Vp_target.append(result_new['fun'])
+
+   #展示结果    
+   plt.figure(figsize=(8, 4))  
+   plt.scatter(Vp_list,Rp_list,c=SR_list, cmap='YlGnBu', marker='o')  
+   plt.colorbar(label='Sharpe Ratio')  
+   plt.plot(Vp_target,Rp_target,'r-',label="efficient frontier")
+   plt.scatter(sdp, rp, marker='*', color='r', s=300, label='Max Sharpe Ratio')  
+   plt.title('Efficient Frontier')  
+   plt.xlabel('Annualized Volatility')  
+   plt.ylabel('Annualized Return')  
+   plt.legend(labelspacing=0.8)  
+   plt.show()
+````
 ---
 
 ### 核心工具介绍
