@@ -51,8 +51,8 @@ $$
 ---
 
 ### 算法实现
-#### 投资组合可行解
 
+#### 投资组合可行解
 ````python
 ```
     #随机进行2000次模拟  
@@ -79,6 +79,7 @@ $$
    plt.ylabel('Expected Return', labelpad=20)  
    plt.grid()
 ````
+
 #### 投资组合的有效前沿
 ````python
 ```
@@ -125,36 +126,8 @@ $$
    plt.legend(labelspacing=0.8)  
    plt.show()
 ````
+#### 必要参数设置
 
-#### 投资组合可行解
-
-````python
-```
-    #随机进行2000次模拟  
-    #Rp_list,Vp_list分别存储每个模拟投资的预期收益率和波动率
-    n=5   #五只股票五个投资组合
-    I=2000
-    Rp_list=np.ones(I)  #预期收益率
-    Vp_list=np.ones(I)  #波动率
-    SR_list=np.ones(I)  #夏普比率
-
-    #模拟过程
-    for i in np.arange(I):
-       x=np.random.rand(n)  #生成n个随机权重
-       weights=x/sum(x)     #权重归一化，使其和为1
-       Rp_list[i]=np.sum(weights*Manual_LR)   #收益
-       Vp_list[i]=np.sqrt(np.dot(weights,np.dot(Cov_LR,weights.T)))  #波动
-       SR_list[i]=Rp_list[i]/Vp_list[i]
-
-   #展示结果    
-   plt.figure(figsize=(8, 4), dpi=100, facecolor='white')  
-   plt.scatter(Vp_list, Rp_list)  
-   plt.title('The relationship between expected portfolio return and volatility', pad=20)  
-   plt.xlabel('Volatility', labelpad=20)  
-   plt.ylabel('Expected Return', labelpad=20)  
-   plt.grid()
-
-````
 #### 资本市场线
 ````python
 ```
@@ -192,6 +165,8 @@ $$
    plt.legend(labelspacing=0.8)  
    plt.show()
 ````
+> 股价收益率不能处理对称处理上涨和下跌，增加50%和减少50%的影响不会相互抵消,多期收益计算容易产生累积误差，适合分析不连续性的收益事件，如分红和其他一次性收益。
+> 对数收益率：假设市场是连续复利的，对数收益率更反映真实收益，上下波动对称，且多期收益可以简单相加而不产生累积误差，更适合正态分布假设,长期投资和复杂的金融模型适合使用对数收益率。
 
 ---
 
