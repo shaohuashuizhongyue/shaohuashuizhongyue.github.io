@@ -49,7 +49,39 @@ w_i \geq 0 \quad \forall i
 $$
    
 ---
+###基础数据及其特征展示
 
+````python    
+```
+    pip install cvxopt
+    pip install yfinance #下载股票数据
+    
+````
+
+
+````python
+```
+    import numpy as np
+    import pandas as pd  
+    import matplotlib.pyplot as plt  
+    from cvxopt import matrix, solvers
+    import yfinance as yf 
+
+    # 获取股票数据  
+    tickers = ['GOOG', 'MSFT', 'AAPL', 'NVDA', 'AMZN']  
+    data = yf.download(tickers, start='2024-01-01', end='2024-10-01')['Adj Close']
+
+    data.shift(1) #创造一行空行用于计算收益率
+
+    #将股票按照初始交易日进行归一化处理并可视化
+    (data/data.iloc[0]).plot(figsize=(10,6),grid=True)
+
+````
+<center>
+<img src = "/blogs/206yingjian.assets/Efficient Frontier.png">
+</center>
+
+---
 ### 算法实现
 
 #### 投资组合可行解
