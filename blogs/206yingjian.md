@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /blogs/206yingjian/index.html
-title: J.P. Morgan Quantitative Project
+title: J.P.M Quantitative Project
 ---
 
 ## J.P.M Quantitative 
