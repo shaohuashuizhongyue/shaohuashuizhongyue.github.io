@@ -267,7 +267,28 @@ constraints=cons_Slope)
 
 ### 🍴 具体任务实现的算法
 
+````python
+```
+# Black-Litterman 模型定义  
+# tau 是一个标量参数，
+#通常取值在 0 到 1 之间。它表示我们对市场均衡的信心相对于样本信息的程度。
+# tau通常选 1/选观察的交易日长度
+def blacklitterman(returns, tau, P, Q):  
+    mu = returns.mean()  
+    sigma = returns.cov()  
+    pil = np.expand_dims(mu, axis=0).T  # 市场均衡预期收益率（Π）  
+    ts = tau * sigma  
+    ts_inv = linalg.inv(ts)  
+    Omega = np.dot(np.dot(P, ts), P.T) * np.eye(Q.shape[0])  # 观点评价矩阵  
+    Omega_inv = linalg.inv(Omega)  
+    # 计算后验预期收益率  
+    er = linalg.inv(ts_inv + np.dot(np.dot(P.T, Omega_inv), P)) @ (np.dot(ts_inv, pil) + np.dot(np.dot(P.T, Omega_inv), Q))  
+    # 计算后验协方差矩阵  
+    posteriorSigma = linalg.inv(ts_inv + np.dot(np.dot(P.T, Omega_inv), P))  
+    return [er, posteriorSigma]  
 
+
+````
 
 
 
