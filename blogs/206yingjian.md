@@ -286,12 +286,182 @@ def blacklitterman(returns, tau, P, Q):
     # 计算后验协方差矩阵  
     posteriorSigma = linalg.inv(ts_inv + np.dot(np.dot(P.T, Omega_inv), P))  
     return [er, posteriorSigma]  
+```
 
+````python
+```
+
+# 定义投资者的观点  
+pick1 = np.array([1, 0, 1, 1, 1])  # 观点1涉及GOOG, AAPL, NVDA, AMZN  
+q1 = np.array([0.003 * 4])        # 对应的观点预期收益率  
+
+pick2 = np.array([0.5, 0.5, 0, 0, -1])  # 观点2是GOOG和MSFT的组合比AMZN表现更好  
+q2 = np.array([0.001])                  # 对应的观点预期收益率  
+
+P = np.array([pick1, pick2])  
+Q = np.array([q1, q2])
+
+# 计算 Black-Litterman 后验预期收益率和协方差矩阵  
+res = blacklitterman(log_return, 1/252, P, Q)  
+
+# res[0]: 后验均值   # res[1]：后验协方差矩阵  
+
+````
+
+````python
+```
+
+#最小方差组合的资产配置权重 (blminVar)
+# 定义最小方差组合计算函数  
+def blminVar(cov_matrix):  
+    n = cov_matrix.shape[0]  
+    ones = np.ones(n)  
+    inv_cov = linalg.inv(cov_matrix)  
+    weights = inv_cov @ ones / (ones.T @ inv_cov @ ones)  
+    return weights  
+
+# 计算最小方差组合的权重  
+weights = blminVar(res[1])  
+
+# 将结果转换为 pandas Series，方便展示  
+weights_series = pd.Series(weights, index=tickers) 
 
 ````
 
 
+````python
+```
 
+# 可视化权重分布  
+plt.figure(figsize=(10,6))  
+weights_series.plot(kind='bar')  
+plt.title('Minimum Variance Portfolio Weights (Black-Litterman)')  
+plt.ylabel('Weight')  
+plt.xlabel('Assets')  
+plt.grid(True)  
+plt.savefig('Minimum Variance Portfolio Weights (Black-Litterman).png', dpi=500)
+plt.show()
+
+````
+
+````python
+```
+
+#2. 比较 Black-Litterman 组合与随机组合的预期收益和风险  
+
+weights_BL=weights_series
+# 计算 Black-Litterman 组合的预期收益和风险  
+mu_BL = res[0].flatten()  
+portfolio_return_BL = np.dot(weights_BL, mu_BL)  
+portfolio_variance_BL = np.dot(weights_BL, np.dot(res[1], weights_BL))  
+portfolio_std_BL = np.sqrt(portfolio_variance_BL)  
+
+# 生成随机组合  
+num_portfolios = 5000  
+np.random.seed(42)  # 为了结果可重复  
+
+random_weights = np.random.dirichlet(np.ones(len(tickers)), size=num_portfolios)  
+random_returns = random_weights @ mu_BL  
+random_variances = np.einsum('ij,ik,jk->i', random_weights, random_weights, res[1])  
+random_std = np.sqrt(random_variances)  
+
+# 计算随机组合的预期收益和风险  
+random_returns = random_weights @ mu_BL  
+random_std = np.sqrt(random_variances)  
+
+# 计算随机组合的夏普比率（假设无风险利率为0）  
+sharpe_random = random_returns / random_std  
+sharpe_BL = portfolio_return_BL / portfolio_std_BL  
+
+# 3. 可视化比较  
+
+plt.figure(figsize=(12,8))  
+plt.scatter(random_std, random_returns, c=sharpe_random, cmap='viridis', alpha=0.5)  
+plt.colorbar(label='Sharpe Ratio')  
+# 绘制 Black-Litterman 组合  
+plt.scatter(portfolio_std_BL, portfolio_return_BL, color='red', marker='*', s=200, label='Black-Litterman Portfolio')  
+plt.title('Black-Litterman Portfolio vs Random Portfolios')  
+plt.xlabel('Risk (Standard Deviation)')  
+plt.ylabel('Expected Return')  
+plt.legend()  
+plt.grid(True)  
+plt.savefig('BL_Portfolio.png', dpi=500)
+plt.show()  
+
+
+````
+
+````python
+```
+
+# 初始化一个DataFrame来存储所有随机组合的累计收益率  
+num_simulations =5000  
+np.random.seed(42)  # 为了可重复性  
+
+# 计算简单收益率并去除缺失值  
+simple_return = data.pct_change()  # 计算简单收益率  
+simple_return = simple_return.dropna(how='all')  # 去除缺失值
+
+
+# 初始化一个DataFrame来存储所有随机组合的累计收益率  
+cumulative_random_all = pd.DataFrame(index=simple_return.index)  
+final_random_returns = []  
+def calculate_cumulative_returns(simple_return, weights):  
+    """  
+    计算组合的累计收益率。  
+
+    参数:  
+    - simple_return: DataFrame，每个资产的简单收益率。  
+    - weights: 数组或列表，资产的权重。  
+
+    返回:  
+    - cumulative_returns: Series，组合的累计收益率。  
+    """  
+    # 计算组合的加权收益率  
+    portfolio_return = (simple_return @ weights)  
+    
+    # 计算累计收益率  
+    cumulative_returns = (1 + portfolio_return).cumprod() - 1  
+    
+    return cumulative_returns
+
+# 计算 Black-Litterman 组合的累计收益率  
+cumulative_bl = calculate_cumulative_returns(simple_return, weights_BL)
+````
+
+````python
+```
+# 模拟5000个随机组合  
+for i in range(num_simulations):  
+    # 生成随机权重  
+    random_weights = np.random.random(len(tickers))  
+    random_weights /= random_weights.sum()  # 标准化权重  
+    # 计算累计收益率  
+    cumulative_random = calculate_cumulative_returns(simple_return, random_weights)  
+    # 将每个随机组合的累计收益率存储到DataFrame  
+    cumulative_random_all[f'Random_{i+1}'] = cumulative_random  
+    # 记录最终的累计收益率  
+    final_random_returns.append(cumulative_random.iloc[-1])  
+
+# 3. 可视化比较  
+plt.figure(figsize=(12, 8))  
+
+# 绘制所有随机组合的累计收益率路径，颜色稍微透明以显示趋势  
+plt.plot(cumulative_random_all, color='lightgrey', alpha=1, linewidth=1)  
+
+# 绘制Black-Litterman组合的累计收益率路径  
+plt.plot(cumulative_bl, color='red', linewidth=2, label='Black-Litterman Portfolio')  
+
+plt.title('Cumulative Returns Comparison')  
+plt.xlabel('Date')  
+plt.ylabel('Cumulative Return')  
+plt.legend()  
+plt.grid(True, linestyle='--', alpha=0.7)  
+plt.tight_layout()  
+
+plt.savefig('Cumulative Return Comparision.png', dpi=500) 
+plt.show()  
+````
 
 ---
 
