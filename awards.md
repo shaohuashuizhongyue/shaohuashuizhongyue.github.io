@@ -7,7 +7,7 @@ title: Awards
 ## Research Funding & Scholarships
 
 - 2023-2025: Provincial Undergraduate Innovation and Entrepreneurship Training Program<br>**Provincial Key** Program Scholarship (¥10,000)
-- 2023-2024：Comprehensive Third-Class Scholarship (¥5000,rank **7/60**)
+- 2023-2024：Comprehensive Scholarship (¥5000,rank **7/60**)
   <br> Combined degree scholarship between Maynooth and FZU
 - 2023-2024: Undergraduate Innovation and Entrepreneurship Training Program<br>Provincial Key Program Scholarship (¥2000)
 
