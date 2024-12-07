@@ -10,7 +10,7 @@ title: Publications
 
 - [LEET: stock market forecast with long-term emotional change enhanced temporal model](https://doi.org/10.7717/peerj-cs.1969)
 <br> **Honglin Liao**, Jiacheng Huang , Yong Tang
-<br> *PeerJ Computer Science, 2024*.( **SCI**, **JCR Q1**, **IF 3.5**).
+<br> *PeerJ Computer Science, 2024*.( **SCI**, **JCR Q1**, **IF 3.5**)(2 cites).
 
 - mmPowerHAR: A Framework Using mmRadar for Human Activity Recognition in Power Station 
 <br> **Honglin Liao**, Jiacheng Huang, Hanlin Cai, Cunyi Yin, Hao Jiang
@@ -40,7 +40,7 @@ title: Publications
 
 - [A study on the impact of GGDP on climate mitigation based on grey prediction](https://scholar.google.cz/citations?view_op=view_citation&hl=zh-CN&user=glMCPm4AAAAJ&citation_for_view=glMCPm4AAAAJ:UeHWp8X0CEIC)
 <br> **Honglin Liao**, Zhuoyi Yu, Yuxuan Shi
-<br> *2023 2nd International Conference on Applied Mathematics, Modeling Simulation and Automatic Control (AMMSAC 2023,CPCI, SCOPUS)*
+<br> *2023 2nd International Conference on Applied Mathematics, Modeling Simulation and Automatic Control (AMMSAC 2023,CPCI, SCOPUS)(1 cite)*
 
 ---
 
