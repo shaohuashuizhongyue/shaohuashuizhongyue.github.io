@@ -25,18 +25,18 @@ title: Publications
 
 - [Energy Demand Forecasting Model Based on Romember's Self-Attention Mechanism and Deep Learning](https://ieeexplore.ieee.org/abstract/document/10594520)
 <br> **Honglin Liao**, Zheng Wu, Hanhao Ye, Pengxiang Hu, Wei Du, Yong Tang
-<br> *International Conference on Electronic Technology, Communication and Information (ICETCI 2024,EI Compendex, SCOPUS) (**2 cite**)*
+<br> *International Conference on Electronic Technology, Communication and Information (ICETCI 2024,EI Compendex, SCOPUS) (**2 cites**)*
 <br> Changchun, China. May, 2024.
-
-- [Research on automatic pricing and replenishment decision of vegetable commodities based on penalty function LSTM model](https://ieeexplore.ieee.org/document/10442643)
-<br> **Honglin Liao**, Jiacheng Huang, Shujuan Chen
-<br> *International Conference on Information Engineering, Electronics and Communication Technology (IEECT 2023,EI Compendex, SCOPUS)*
-<br> Los Angeles, USA. September, 2023.
 
 - [Research on Ovarian Image Classfication Model Based on EfficientNet-B0 and Generalized Mean Pooling](https://ieeexplore.ieee.org/abstract/document/10761779/references#references)
 <br> **Honglin Liao**, Hanhao Ye, Jinyangzhen Dan, Junxi Liao, Zhiyuan Ni, Zhuoyi Yu, Hankai Qiu
 <br> *International Conference on Artificial Intelligence, Computers and Big Data (AICBD 2024,EI Compendex, SCOPUS)(**1 cite**)*
 <br> Qingdao, China. October, 2024.
+
+- [Research on automatic pricing and replenishment decision of vegetable commodities based on penalty function LSTM model](https://ieeexplore.ieee.org/document/10442643)
+<br> **Honglin Liao**, Jiacheng Huang, Shujuan Chen
+<br> *International Conference on Information Engineering, Electronics and Communication Technology (IEECT 2023,EI Compendex, SCOPUS)*
+<br> Los Angeles, USA. September, 2023.
 
 - [A study on the impact of GGDP on climate mitigation based on grey prediction](https://scholar.google.cz/citations?view_op=view_citation&hl=zh-CN&user=glMCPm4AAAAJ&citation_for_view=glMCPm4AAAAJ:UeHWp8X0CEIC)
 <br> **Honglin Liao**, Zhuoyi Yu, Yuxuan Shi
