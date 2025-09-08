@@ -8,23 +8,22 @@ title: research
 
 ## Internship Experience
 
-- **Imperial Vision Technology/Power System and Equipment Industry Research Institute**(Jan 2023 - present)
-<br>mmPowerHAR: A Framework Using mmRadar for Human Activity Recognition in Power Station
-<br>Research Assistant (supervised by Prof. Jiang Hao, Fuzhou University and Prof. Chen Zhenghua, Nanyang Technological University) 
+- **Frost & Sullivan, Growth Consulting Department，Assistant Analyst**(March 2025 - August 2025)
 <br>• **Outline**:  
-Based on the situations at the power distribution station, using mmWave radar evaluation boards to realise the determination of 
-personnel posture and trajectory tracking; 
-<br>• **Responsibilities**:  
-Implemented real-time data collection using TI’s mmWave radar, developed deep learning algorithms and achieved human pose 
-classification; 
-<br>• **Achievement**:  
-Authored a research paper and submitted to IEEE Transactions on Network Science and Engineering. 
+Participated in strategic research projects for the smart IoT industry, contributing substantially to three core projects: the obalt-nickel new energy materials industry analysis, high-performance hybrid chip market research, and smart IoT enterprise strategy diagnosis. 
+Engaged in the end-to-end process from industry status analysis and competitive landscape analysis to strategic path development. 
+Completed core tasks, such as building indicator analysis models, automating Wind data cleaning and processing using Python, and diagnosing enterprise issues and formulating strategies. 
+Collaborated with the team to align with client demands, assisted in the completion of multiple client presentations, and secured approval from company executives, ensuring effective alignment of research findings with business objectives. 
+
+
+
+
 
 ---
 
 ## Research Projects
 
-- **Research on Marketization Allocation of Public Data Assets**(Jun 2023-present)
+- **Research on Marketization Allocation of Public Data Assets**(Jan 2023-present)
 <br>National Social Science Foundation Project
 <br>Supervisor: Prof. Yong Tang, Fuzhou University 
 <br>• **Outline**:
@@ -34,6 +33,17 @@ Researching the impact of market sentiment on the stock market and quantitative 
 <br>• **Achievement**:  
 Published [LEET: stock market forecast with long-term emotional change enhanced temporal model](https://doi.org/10.7717/peerj-cs.1969) in *PeerJ Computer Science, 2024*.( **JCR Q1**, **IF 3.5**) as **First author and corresponding author**.
 
+- **Imperial Vision Technology/Power System and Equipment Industry Research Institute**(Sep 2024 - present)
+<br>mmPowerHAR: A Framework Using mmRadar for Human Activity Recognition in Power Station
+<br>Research Assistant (supervised by Prof. Jiang Hao, Fuzhou University and Prof. Chen Zhenghua, Nanyang Technological University) 
+<br>• **Outline**:  
+Based on the situations at the power distribution station, using mmWave radar evaluation boards to realise the determination of 
+personnel posture and trajectory tracking; 
+<br>• **Responsibilities**:  
+Implemented real-time data collection using TI’s mmWave radar, developed deep learning algorithms and achieved human pose 
+classification; 
+<br>• **Achievement**:  
+Authored a research paper and submitted to IEEE Transactions on Power Delivery.
 
 - **Stock Price Prediction Research Based on RoBERTa-Informer**(Jun 2023-Jun 2024) 
 <br>Supervisor: Prof. Yong Tang, Fuzhou University
