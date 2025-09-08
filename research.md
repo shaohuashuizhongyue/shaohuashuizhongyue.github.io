@@ -37,7 +37,6 @@ Researching the impact of market sentiment on the stock market and quantitative 
 Published [LEET: stock market forecast with long-term emotional change enhanced temporal model](https://doi.org/10.7717/peerj-cs.1969) in *PeerJ Computer Science, 2024*.( **JCR Q1**, **IF 3.5**) as **First author and corresponding author**.
 
 - [**JP Morgan PTA Project,Quantitative Investment Strategy Development**](https://honglinliao.com//blogs/206yingjian)(Sep 2024 - present)
-<br>**Responsibilities**:  
 <br>• Constructed a US tech stock dataset (2019-2024), with 10 years of historical data accessed through the yfinance API. Calculated logarithmic returns, performed volatility modeling, and conducted an asset correlation matrix analysis.  
 <br>•Implemented Markowitz mean-variance optimization and Black-Litterman model dynamic weight allocation, combined with CVXOpt to solve convex optimization problems. 
 <br>• Designed a Monte Carlo simulation system to generate 10,000 random portfolios to verify the robustness of the strategy.
