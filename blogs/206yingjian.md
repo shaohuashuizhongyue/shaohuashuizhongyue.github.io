@@ -437,6 +437,11 @@ def calculate_cumulative_returns(simple_return, weights):
 cumulative_bl = calculate_cumulative_returns(simple_return, weights_BL)
 ````
 
+<center>
+<img src = "/blogs/206yingjian.assets/BL_vs_Random_Scatter.png">
+</center>
+
+
 ````python
 ```
 # 模拟5000个随机组合  
@@ -470,7 +475,9 @@ plt.tight_layout()
 plt.savefig('Cumulative Return Comparision.png', dpi=500) 
 plt.show()  
 ````
-
+<center>
+<img src = "/blogs/206yingjian.assets/Cumulative Return Comparision (1).png">
+</center>
 ---
 
 
