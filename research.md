@@ -41,8 +41,8 @@ Published [LEET: stock market forecast with long-term emotional change enhanced 
 • Constructed a US tech stock dataset (2019-2024), with 10 years of historical data accessed through the yfinance API. Calculated logarithmic returns, performed volatility modeling, and conducted an asset correlation matrix analysis.  
 • Implemented Markowitz mean-variance optimization and Black-Litterman model dynamic weight allocation, combined with CVXOpt to solve convex optimization problems. 
 • Designed a Monte Carlo simulation system to generate 10,000 random portfolios to verify the robustness of the strategy.
-• Constructed a three-factor enhancement model: integrating market equilibrium returns, historical volatility, and momentum factors, achieving risk parity optimization through covariance matrix constraints. 
-• Established a multi-dimensional evaluation system and completed a comparison with 5,000 random portfolios for verification.
+<br>• Constructed a three-factor enhancement model: integrating market equilibrium returns, historical volatility, and momentum factors, achieving risk parity optimization through covariance matrix constraints. 
+<br>• Established a multi-dimensional evaluation system and completed a comparison with 5,000 random portfolios for verification.
 
 - **Imperial Vision Technology/Power System and Equipment Industry Research Institute**(Sep 2024 - present)
 <br>mmPowerHAR: A Framework Using mmRadar for Human Activity Recognition in Power Station
