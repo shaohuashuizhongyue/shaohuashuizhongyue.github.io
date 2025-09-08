@@ -15,7 +15,7 @@ title: research
 <br>• Completed core tasks, such as building indicator analysis models, automating Wind data cleaning and processing using Python, and diagnosing enterprise issues and formulating strategies. 
 <br>• Collaborated with the team to align with client demands, assisted in the completion of multiple client presentations, and secured approval from company executives, ensuring effective alignment of research findings with business objectives. 
 
-- **China Securities, Financial Planner Assistant**(March 2025 - August 2025)
+- **China Securities, Financial Planner Assistant**(July 2024 - August 2024)
  <br>**Outline**:
  <br>• Industry Research: Led in-depth analysis of over 10 annual reports and prospectuses of leading companies in the industry, establishing a three-dimensional research framework for business, industry, and operations. . 
 <br>• Model Application: Utilized DuPont Analysis and Porter’s Five Forces Model to quantitatively assess factors driving a company’s return on equity (ROE), the industry’s competitive landscape, and policy impacts. . 
