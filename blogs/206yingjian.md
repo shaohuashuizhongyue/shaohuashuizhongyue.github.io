@@ -152,7 +152,9 @@ title: J.P.M Quantitative Project
 
 ---
 #### 必要参数设置
-> 股价收益率不能处理对称处理上涨和下跌，增加50%和减少50%的影响不会相互抵消,多期收益计算容易产生累积误差，适合分析不连续性的收益事件，如分红和其他一次性收益。<br>对数收益率：假设市场是连续复利的，对数收益率更反映真实收益，上下波动对称，且多期收益可以简单相加而不产生累积误差，更适合正态分布假设,长期投资和复杂的金融模型适合使用对数收益率。
+> The price-to-earnings ratio cannot symmetrically account for both increases and decreases in stock prices; the effects of a 50% increase and a 50% decrease do not offset each other. Calculating multi-period returns is prone to cumulative errors, making it suitable for analyzing discontinuous income events such as dividends and other one-time gains. <br>Logarithmic Return: Assuming the market operates under continuous compounding, logarithmic returns more accurately reflect true gains. They exhibit symmetrical fluctuations and allow multi-period returns to be simply summed without cumulative error. This approach better aligns with the assumption of normal distribution. Logarithmic returns are particularly suitable for long-term investments and complex financial models.
+
+<br>股价收益率不能处理对称处理上涨和下跌，增加50%和减少50%的影响不会相互抵消,多期收益计算容易产生累积误差，适合分析不连续性的收益事件，如分红和其他一次性收益。<br>对数收益率：假设市场是连续复利的，对数收益率更反映真实收益，上下波动对称，且多期收益可以简单相加而不产生累积误差，更适合正态分布假设,长期投资和复杂的金融模型适合使用对数收益率。
 
 ````python
 ```
