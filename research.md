@@ -8,7 +8,7 @@ title: research
 
 ## Internship Experience
 
-- **Frost & Sullivan, Growth Consulting Department，Assistant Analyst**(March 2025 - August 2025)
+- **Frost & Sullivan, Growth Consulting Department, Assistant Analyst**(March 2025 - August 2025)
  <br>**Outline**:
  <br>• Participated in strategic research projects for the smart IoT industry, contributing substantially to three core projects: the obalt-nickel new energy materials industry analysis, high-performance hybrid chip market research, and smart IoT enterprise strategy diagnosis. 
 <br>• Engaged in the end-to-end process from industry status analysis and competitive landscape analysis to strategic path development. 
