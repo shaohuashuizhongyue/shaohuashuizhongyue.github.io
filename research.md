@@ -17,7 +17,7 @@ title: research
 
 - **China Securities, Financial Planner Assistant**(July 2024 - August 2024)
  <br>**Outline**:
- <br>• Industry Research: Led in-depth analysis of over 10 annual reports and prospectuses of leading companies in the industry, establishing a three-dimensional research framework for business, industry, and operations. . 
+ <br>• Industry Research: Led in-depth analysis of over 10 annual reports and prospectuses of leading companies in the industry, establishing a three-dimensional research framework for business, industry, and operations. 
 <br>• Model Application: Utilized DuPont Analysis and Porter’s Five Forces Model to quantitatively assess factors driving a company’s return on equity (ROE), the industry’s competitive landscape, and policy impacts. . 
 <br>• Financial Diagnosis: Assessed the company’s profitability and cost control through horizontal comparisons of core indicators such as debt-to-asset ratios and gross profit margins, and analyzed industry development trends. 
 
