@@ -10,7 +10,7 @@ title: research
 
 - **Frost & Sullivan, Growth Consulting Department，Assistant Analyst**(March 2025 - August 2025)
  <br>**Outline**:
-• Participated in strategic research projects for the smart IoT industry, contributing substantially to three core projects: the obalt-nickel new energy materials industry analysis, high-performance hybrid chip market research, and smart IoT enterprise strategy diagnosis. 
+ <br>• Participated in strategic research projects for the smart IoT industry, contributing substantially to three core projects: the obalt-nickel new energy materials industry analysis, high-performance hybrid chip market research, and smart IoT enterprise strategy diagnosis. 
 <br>• Engaged in the end-to-end process from industry status analysis and competitive landscape analysis to strategic path development. 
 <br>• Completed core tasks, such as building indicator analysis models, automating Wind data cleaning and processing using Python, and diagnosing enterprise issues and formulating strategies. 
 <br>• Collaborated with the team to align with client demands, assisted in the completion of multiple client presentations, and secured approval from company executives, ensuring effective alignment of research findings with business objectives. 
