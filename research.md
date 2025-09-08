@@ -4,7 +4,7 @@ permalink: /research/index.html
 title: research
 ---
 
-> Lastest Update: 9th Sep 2024 &nbsp; 
+> Lastest Update: Aug 2022 &nbsp; 
 
 ## Internship Experience
 
