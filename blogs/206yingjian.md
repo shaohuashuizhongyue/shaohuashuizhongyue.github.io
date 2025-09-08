@@ -19,7 +19,8 @@ title: J.P.M Quantitative Project
 
 2.最佳持仓配比求解：*cvxopt/sco*
 
-<br>The efficient frontier represents the best combinations of risk and expected return, which offer the highest expected return at a given level of risk or the lowest risk for a given expected return.有效前沿作为代表了一组风险和预期回报之间的最佳组合，这些组合在给定的风险水平下提供了最高的预期回报，或者在给定的预期回报下具有最低的风险。
+<br>The efficient frontier represents the best combinations of risk and expected return, which offer the highest expected return at a given level of risk or the lowest risk for a given expected return.
+<br>有效前沿作为代表了一组风险和预期回报之间的最佳组合，这些组合在给定的风险水平下提供了最高的预期回报，或者在给定的预期回报下具有最低的风险。
 
 <center>
 <img src = "/blogs/206yingjian.assets/有效前沿2.png">
