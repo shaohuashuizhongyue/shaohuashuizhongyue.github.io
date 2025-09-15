@@ -10,7 +10,7 @@ title: Publications
 
 - [LEET: stock market forecast with long-term emotional change enhanced temporal model](https://doi.org/10.7717/peerj-cs.1969)
 <br> **Honglin Liao**, Jiacheng Huang , Yong Tang
-<br> *PeerJ Computer Science, 2024.( **SCI**, **JCR Q1**, **IF 3.5**) (**7 cites**)*.
+<br> *PeerJ Computer Science, 2024.( **SCI**, **JCR Q1**, **IF 3.5**) (**8 cites**)*.
 
 - mmPowerHAR: A Framework Using mmRadar for Human Activity Recognition in Power Station 
 <br> **Honglin Liao**, Jiacheng Huang, Hanlin Cai, Cunyi Yin, Hao Jiang
@@ -25,7 +25,7 @@ title: Publications
 
 - [Energy Demand Forecasting Model Based on Romember's Self-Attention Mechanism and Deep Learning](https://ieeexplore.ieee.org/abstract/document/10594520)
 <br> **Honglin Liao**, Zheng Wu, Hanhao Ye, Pengxiang Hu, Wei Du, Yong Tang
-<br> *International Conference on Electronic Technology, Communication and Information (ICETCI 2024,EI Compendex, SCOPUS) (**2 cites**)*
+<br> *International Conference on Electronic Technology, Communication and Information (ICETCI 2024,EI Compendex, SCOPUS) (**3 cites**)*
 <br> Changchun, China. May, 2024.
 
 - [Research on Ovarian Image Classfication Model Based on EfficientNet-B0 and Generalized Mean Pooling](https://ieeexplore.ieee.org/abstract/document/10761779/references#references)
