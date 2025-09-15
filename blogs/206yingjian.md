@@ -407,7 +407,7 @@ plt.show()
 ```
 
 # 初始化一个DataFrame来存储所有随机组合的累计收益率  
-num_simulations =5000  
+num_simulations =10000  
 np.random.seed(42)  # 为了可重复性  
 
 # 计算简单收益率并去除缺失值  
@@ -448,7 +448,7 @@ cumulative_bl = calculate_cumulative_returns(simple_return, weights_BL)
 
 ````python
 ```
-# 模拟5000个随机组合  
+# 模拟10000个随机组合  
 for i in range(num_simulations):  
     # 生成随机权重  
     random_weights = np.random.random(len(tickers))  
