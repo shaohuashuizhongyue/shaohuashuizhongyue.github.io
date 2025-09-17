@@ -25,7 +25,7 @@ Here is **Liao Honglin (Honglin Liao,廖泓霖)**.
 </style>
 
 <div class="justify-text">
-    Welcome to my academic homepage! I am a fourth-year undergraduate student pursuing a dual degree in Robotics and Intelligent Devices at National University of Ireland Maynooth & Fuzhou University. Currently, I hold the position of Research Assistant in the Financial Technology Laboratory. In this role, I have had the privilege of receiving meticulous guidance from Professor Yong Tang, who leads the Data Mining (DM) group within the National Social Science Foundation.
+    Welcome to my academic homepage! I am a fourth-year undergraduate student pursuing a dual degree in Robotics and Intelligent Devices at National University of Ireland Maynooth and Fuzhou University. Currently, I hold the position of Research Assistant in the Financial Technology Laboratory. In this role, I have had the privilege of receiving meticulous guidance from Professor Yong Tang, who leads the Data Mining (DM) group within the National Social Science Foundation.
     <br>
    I am actively preparing for and seeking opportunities to pursue a master's degree, with the aim of further advancing my academic journey. Should you have any interest in or inquiries regarding my academic background, research experience, or future plans, I cordially invite you to contact me via email at onglinguge@gmail.com. I would be profoundly grateful for the opportunity to engage in further dialogue with you, sharing insights into my educational experiences and professional aspirations.
 </div>
