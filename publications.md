@@ -14,7 +14,7 @@ title: Publications
 
 - mmPowerHAR: A Framework Using mmRadar for Human Activity Recognition in Power Station 
 <br> **Honglin Liao**, Jiacheng Huang, Hanlin Cai, Cunyi Yin, Hao Jiang
-<br> Submitted to *IEEE Transactions on Power Delivery, 2024* (Under Review).
+<br> Submitted to *IEEE Transactions on Instrumentation and Measurement, 2025* (Under Review).
 
 ## Conference Paper
 
