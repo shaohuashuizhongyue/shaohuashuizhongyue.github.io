@@ -28,7 +28,7 @@ title: research
 
 - **Research on Marketization Allocation of Public Data Assets**(Jan 2023-present)
 <br>National Social Science Foundation Project
-<br>Supervisor: Prof. Yong Tang, Fuzhou University 
+<br>Supervisor: Prof. Yong Tang
 <br>• **Outline**:
 Deeply mining the characteristics of public and market-related data and further evaluate its inner value; 
 <br>• **Responsibilities**:  
@@ -46,7 +46,7 @@ Published [LEET: stock market forecast with long-term emotional change enhanced 
 
 - **Imperial Vision Technology/Power System and Equipment Industry Research Institute**(Sep 2024 - present)
 <br>mmPowerHAR: A Framework Using mmRadar for Human Activity Recognition in Power Station
-<br>Research Assistant (supervised by Prof. Jiang Hao, Fuzhou University and Prof. Chen Zhenghua, Nanyang Technological University) 
+<br>Research Assistant (supervised by Prof. Jiang Hao, and Prof. Chen Zhenghua, Nanyang Technological University) 
 <br>• **Outline**:  
 Based on the situations at the power distribution station, using mmWave radar evaluation boards to realise the determination of 
 personnel posture and trajectory tracking; 
@@ -60,7 +60,7 @@ Designed a dynamic rotational position encoding mechanism to model the relative 
 Authored a research paper and submitted to IEEE Transactions on Power Delivery.
 
 - **Stock Price Prediction Research Based on RoBERTa-Informer**(Jun 2023-Jun 2024) 
-<br>Supervisor: Prof. Yong Tang, Fuzhou University
+<br>Supervisor: Prof. Yong Tang
 <br>• **Responsibilities**:  
 Project proposal and opening report writing, algorithm construction and experimentation, completion of project conclusion report and defense PPT production; 
 <br>• **Achievement**:  
